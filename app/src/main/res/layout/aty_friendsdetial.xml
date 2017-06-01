@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/title_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stateListAnimator="@animator/appbar_elevation">
+        <include layout="@layout/title_layout" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <Button
+        android:id="@+id/fridd_btn_fsxx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/mainleft"
+        android:layout_marginRight="@dimen/mainright"
+        android:textAllCaps="false"
+        android:background="@drawable/shape_main_color"
+        android:text="@string/fasongxiaoxi"
+        android:textColor="@color/white"
+        android:textSize="@dimen/firstsize" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/homebgc"
+        android:layout_above="@id/fridd_btn_fsxx"
+        android:layout_below="@id/title_title">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/fridd_rltt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#33c0c0c0"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/fridd_ivtt"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:src="@mipmap/ic_launcher2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/fridd_ivtt"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fridd_tvttn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/twosize" />
+
+                    <TextView
+                        android:id="@+id/fridd_tvtta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textSize="@dimen/threesize" />
+
+                    <TextView
+                        android:id="@+id/fridd_tvttr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textSize="@dimen/threesize" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hasquanxian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fridd_rltt"
+                android:visibility="visible">
+                <TextView
+                    android:id="@+id/tv_remind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shezhiyongyaotixing"
+                    android:padding="12dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/empty_bg"
+                    android:layout_below="@+id/tv_remind"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rl_fankun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_remind"
+                    android:padding="12dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="患者用药信息反馈"
+                        android:layout_centerVertical="true"
+                        />
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"/>
+                </RelativeLayout>
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/empty_bg"
+                    android:layout_below="@+id/rl_fankun"
+                    />
+                <TextView
+                    android:id="@+id/fridd_tvycsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/yichangshuju"
+                    android:textSize="@dimen/twosize"
+                    android:layout_below="@+id/view_line"
+                    />
+
+                <TextView
+                    android:id="@+id/fridd_tvhx1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/fridd_tvycsj"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:layout_marginRight="@dimen/mainleft"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/viewline" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fridd_rlv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fridd_tvhx1"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:layout_marginRight="@dimen/mainleft" />
+
+                <TextView
+                    android:id="@+id/fridd_tv_qbsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fridd_rlv"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/quanbushuju"
+                    android:textSize="@dimen/twosize" />
+
+
+                <RelativeLayout
+                    android:id="@+id/fridd_rl_xm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fridd_tv_qbsj"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:layout_marginRight="@dimen/mainleft"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/addfriend_bac"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/fridd_tv_xm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/home_heartRate"
+                        android:textSize="@dimen/twosize" />
+
+                    <ImageView
+                        android:id="@+id/fridd_iv_sjjt"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/xiangxiajiantou_03"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/fragment_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fridd_rl_xm"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_noright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@id/fridd_rltt"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="60dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/haoyou_noright" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/nindehaoyoushezhiquanxian"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_shenqingchakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView11"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/shenqingchakan"
+                    android:textColor="@color/main_color"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

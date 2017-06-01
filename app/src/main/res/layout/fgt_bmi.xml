@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical"
+    tools:context=".ui.MainAty">
+    <ImageView
+        android:id="@+id/iv_qushi"
+        android:layout_width="@dimen/rili"
+        android:layout_height="@dimen/rili"
+        android:background="@drawable/iv_zhexiantu"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/homebgc"
+        android:layout_marginLeft="@dimen/mainleft"
+        android:layout_marginRight="@dimen/mainleft">
+
+        <com.zhixinyisheng.user.view.ScaleRulerView
+            android:id="@+id/scaleWheelView_height"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" />
+
+        <com.zhixinyisheng.user.view.SlantedTextView
+            android:id="@+id/slant_one"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            app:slantedBackgroundColor="@color/main_color"
+            android:layout_marginTop="10dp"
+            app:slantedLength="28dp"
+            app:slantedMode="left"
+            app:slantedText="@string/shengao"
+            app:slantedTextColor="#ffffff"
+            app:slantedTextSize="10sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/scaleWheelView_height"
+            android:layout_marginTop="8dp"
+            android:background="@color/homebgc"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:id="@+id/tv_user_height_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:text="170"
+                android:textColor="#333333"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_user_height_value"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/tv_user_height_value"
+                android:text="cm"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/homebgc"
+        android:layout_marginLeft="@dimen/mainleft"
+        android:layout_marginRight="@dimen/mainleft">
+
+        <com.zhixinyisheng.user.view.ScaleRulerView
+            android:id="@+id/scaleWheelView_weight"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" />
+
+        <com.zhixinyisheng.user.view.SlantedTextView
+            android:id="@+id/slant_two"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            app:slantedBackgroundColor="@color/main_color"
+            app:slantedLength="28dp"
+            app:slantedMode="left"
+            app:slantedText="@string/tizhong"
+            app:slantedTextColor="#ffffff"
+            app:slantedTextSize="10sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/scaleWheelView_weight"
+            android:layout_marginTop="8dp"
+            android:background="@color/homebgc"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:id="@+id/tv_user_weight_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="65"
+                android:textColor="#333333"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_user_weight_value"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/tv_user_weight_value"
+                android:text="kg"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_jisuan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/StartCalculating"
+        android:textAllCaps="false"
+        android:textSize="@dimen/font_button"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_main_color"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="60dip"
+        android:layout_marginRight="60dip" />
+    <RelativeLayout
+        android:id="@+id/rl_bmi_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homebgc"
+        android:visibility="gone"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/tv_bmi_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI指数："
+            android:textSize="@dimen/x12"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/textcolor"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:text="身材不错，快说说你是怎么保持的！地方大幅度发打发打发打发打发"
+            android:textSize="@dimen/x12"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_marginRight="@dimen/mainright"
+            android:visibility="gone"
+            android:gravity="center|left"
+            android:layout_below="@+id/tv_bmi_result"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>

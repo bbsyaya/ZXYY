@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <com.zhixinyisheng.user.view.ClearEditText
+        android:id="@+id/et_search_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shp_et"
+        android:drawableLeft="@mipmap/ic_search_edit"
+        android:drawablePadding="5dp"
+        android:hint="请输入医院名称"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="@dimen/font_samll_more" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ListView
+            android:id="@+id/lv_hospital_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_marginRight="@dimen/mainright"
+            android:divider="@color/viewline"
+            android:dividerHeight="1px">
+
+        </ListView>
+    </RelativeLayout>
+</LinearLayout>

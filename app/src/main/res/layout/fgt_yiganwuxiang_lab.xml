@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/ygwx_rl1_tvn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/yiganbiaomiankangyuan"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/threesize" />
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_ygwx_rl1_ivd"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/xialakuang"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_white_shape" >
+
+                    <TextView
+                        android:id="@+id/ygwx_rl1_tvd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textSize="@dimen/threesize"
+                        android:textColor="@color/textcolor" />
+
+                    <ImageView
+                        android:id="@+id/ygwx_rl1_ivd"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x3"
+                        android:src="@drawable/xiangxiajiantou_03" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/ygwx_rl2_tvn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/yiganbiaomiankangti"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/threesize" />
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_ygwx_rl2_ivd"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/xialakuang"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_white_shape"  >
+
+                    <TextView
+                        android:id="@+id/ygwx_rl2_tvd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textSize="@dimen/threesize"
+                        android:textColor="@color/textcolor"/>
+
+                    <ImageView
+                        android:id="@+id/ygwx_rl2_ivd"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x3"
+                        android:src="@drawable/xiangxiajiantou_03" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/ygwx_rl3_tvn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/yiganekangyuan"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/threesize" />
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_ygwx_rl3_ivd"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/xialakuang"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_white_shape" >
+
+                    <TextView
+                        android:id="@+id/ygwx_rl3_tvd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textSize="@dimen/threesize"
+                        android:textColor="@color/textcolor" />
+
+                    <ImageView
+                        android:id="@+id/ygwx_rl3_ivd"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x3"
+                        android:src="@drawable/xiangxiajiantou_03" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/ygwx_rl4_tvn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/yiganekangti"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/threesize"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_ygwx_rl4_ivd"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/xialakuang"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_white_shape"  >
+
+                    <TextView
+                        android:id="@+id/ygwx_rl4_tvd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textSize="@dimen/threesize"
+                        android:textColor="@color/textcolor" />
+
+                    <ImageView
+                        android:id="@+id/ygwx_rl4_ivd"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x3"
+                        android:src="@drawable/xiangxiajiantou_03" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/ygwx_rl5_tvn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/yiganhexinkangti"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/threesize" />
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_ygwx_rl5_ivd"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/xialakuang"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_white_shape"  >
+
+                    <TextView
+                        android:id="@+id/ygwx_rl5_tvd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textSize="@dimen/threesize"
+                        android:textColor="@color/textcolor" />
+
+                    <ImageView
+                        android:id="@+id/ygwx_rl5_ivd"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x3"
+                        android:src="@drawable/xiangxiajiantou_03" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+            <TextView
+                android:id="@+id/tv_bottom_szcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/homebgc"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

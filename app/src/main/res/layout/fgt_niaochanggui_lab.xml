@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/homebgc"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/ncgui_rl2_tvn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ll_ncgui_rl2_ivd"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/danbaizhi"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_ncgui_rl2_ivd"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/xialakuang"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_white_shape">
+
+                    <TextView
+                        android:id="@+id/ncgui_rl2_tvd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/secendsize" />
+
+                    <ImageView
+                        android:id="@+id/ncgui_rl2_ivd"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x3"
+                        android:src="@drawable/xiangxiajiantou_03" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/ncgui_rl3_tvn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/qianxueyinxue"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_ncgui_rl3_ivd"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/xialakuang"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_white_shape">
+
+                    <TextView
+                        android:id="@+id/ncgui_rl3_tvd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/secendsize" />
+
+                    <ImageView
+                        android:id="@+id/ncgui_rl3_ivd"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x3"
+                        android:src="@drawable/xiangxiajiantou_03" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_bizhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/bizhong"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_bizhong"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_white_shape"
+                    android:cursorVisible="true"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/textcolor"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:textSize="@dimen/secendsize" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_hongxibao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/hongxibao"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_hongxibao"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_hongxibao"
+                    android:gravity="center_vertical"
+                    android:text="/ul"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_baixibao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/baixibao"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_baixibao"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_baixibao"
+                    android:gravity="center_vertical"
+                    android:text="/ul"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/ncgui_rl5_tvn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/tongti"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_ncgui_rl5_ivd"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/xialakuang"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_white_shape" >
+
+                    <TextView
+                        android:id="@+id/ncgui_rl5_tvd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textSize="@dimen/secendsize"
+                        android:textColor="@color/textcolor"/>
+                    <ImageView
+                        android:id="@+id/ncgui_rl5_ivd"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x3"
+                        android:src="@drawable/xiangxiajiantou_03" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_hongxibao_gaobei"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/et_hongxibao_gaobei"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/hongxibaogaobei"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_hongxibao_gaobei"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_hongxibao_gaobei"
+                    android:gravity="center_vertical"
+                    android:text="/HPF"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_baixibao_gaobei"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/et_baixibao_gaobei"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/baixibaogaobei"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_baixibao_gaobei"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_baixibao_gaobei"
+                    android:gravity="center_vertical"
+                    android:text="/HPF"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/ncgui_rl1_tvn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/putaotang"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_ncgui_rl1_ivd"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/xialakuang"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_white_shape" >
+
+                    <TextView
+                        android:id="@+id/ncgui_rl1_tvd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textSize="@dimen/secendsize"
+                        android:textColor="@color/textcolor"/>
+                    <ImageView
+                        android:id="@+id/ncgui_rl1_ivd"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x3"
+                        android:src="@drawable/xiangxiajiantou_03" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/ncgui_rl4_tvn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/niaodanyuan"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_ncgui_rl4_ivd"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/xialakuang"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_white_shape" >
+
+                    <TextView
+                        android:id="@+id/ncgui_rl4_tvd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textSize="@dimen/secendsize"
+                        android:textColor="@color/textcolor"/>
+                    <ImageView
+                        android:id="@+id/ncgui_rl4_ivd"
+                        android:layout_width="@dimen/jiantou"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x3"
+                        android:src="@drawable/xiangxiajiantou_03" />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_shangpixibao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/shangpixibao"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_shangpixibao"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_shangpixibao"
+                    android:gravity="center_vertical"
+                    android:text="/ul"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_guangxing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/guanxing"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_guangxing"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:digits="0123456789."
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_guangxing"
+                    android:gravity="center_vertical"
+                    android:text="/ul"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_bingliguanxing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/bingliguanxing"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_bingliguanxing"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_bingliguanxing"
+                    android:gravity="center_vertical"
+                    android:text="/ul"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_xiaoyuanshangpixibao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/et_xiaoyuanshangpixibao"
+                    android:gravity="center_vertical"
+                    android:text="@string/xiaoyuanshangpixibao"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_xiaoyuanshangpixibao"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/secendsize"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_xiaoyuanshangpixibao"
+                    android:gravity="center_vertical"
+                    android:text="/ul"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

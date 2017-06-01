@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AndFrame</string>
+    <string name="confirm">Confirm</string>
+    <string name="Cancel">Cancel</string>
+    <string name="notice">Notice</string>
+    <string name="wait">wait...</string>
+    <string name="banbenhao">\nVersion Code:</string>
+    <string name="gengxintishi">Update Tips</string>
+    <string name="houtaixiazaizhong">In the background download, please wait ...</string>
+    <string name="zhengzaixiazai">Downloading...</string>
+    <string name="xiazaiwancheng">Download completed</string>
+    <string name="wenjianxiazaiwanbi">The file has been downloaded</string>
+    <string name="xiazaishibai">Download failed</string>
+    <string name="kaishixiazai">Start download</string>
+    <string name="qingjianchawangluolianjie">Please check the network connection</string>
+    <string name="banbentaidi">Version is too low, please uninstall and then download!</string>
+    <string name="fuwuqiyichang">Server Exception!</string>
+</resources>

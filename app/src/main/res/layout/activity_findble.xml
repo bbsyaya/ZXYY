@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <include layout="@layout/title_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homebgc">
+    <RelativeLayout
+        android:id="@+id/fble_rl_tp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fble_iv1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x200"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            android:background="@drawable/shouhuan" />
+        <TextView
+            android:id="@+id/fble_tv_hx"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connectSmartBracelet"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/secendSize"/>
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/fble_ll_sssh"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/fble_rl_tp"
+        android:background="#dddddd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/fble_tv_sssh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/searchingBracelet"
+            android:textColor="@color/textcolor"
+            android:textSize="15dp" />
+
+        <ProgressBar
+            android:id="@+id/fble_pb_sssh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_marginLeft="10dp" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/fble_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fble_ll_sssh"
+        android:background="#ffffff"
+        android:dividerHeight="1.0px"
+        android:divider="#cccccc">
+    </ListView>
+
+
+        <RelativeLayout
+            android:id="@+id/fble_rlf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fble_rl_tp"
+            android:layout_marginTop="80dp">
+
+            <ImageView
+                android:id="@+id/fble_ivf"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ct_btn_jzcl_llse" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:stateListAnimator="@animator/appbar_elevation"
+    android:clipToPadding="false">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/cjs_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/cjs_rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/cjs_view">
+
+            <TextView
+                android:id="@+id/cjs_tvt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="标题栏"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/firstsize" />
+
+            <RelativeLayout
+                android:id="@+id/cjs_rlb"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_sliding"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:background="@drawable/title_back"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/back_new"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cjs_rlr"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mainleft"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/title_xinxi"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/title_xinxi"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:id="@+id/cjs_rl_xhd"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:id="@+id/main_unread_msg_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/tixing"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/title_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/sy_btn_delet2x"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/title_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/textcolor_selector"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/title_btn_hosptal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:drawableRight="@mipmap/ic_ws_xia"
+                    android:gravity="right|center"
+                    android:text="石家庄"
+                    android:textColor="@drawable/textcolor_selector"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/cjs_rl_title"
+        android:background="@color/viewline"
+        android:visibility="gone" />
+</android.support.design.widget.AppBarLayout>

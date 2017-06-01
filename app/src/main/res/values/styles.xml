@@ -1,0 +1,136 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!--recycleview样式-->
+        <item name="android:listDivider">@drawable/divider</item>
+    </style>
+
+    <!--2、设置透明Theme-->
+    <style name="Theme.AppStartLoadTranslucent" parent="AppTheme.Base">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--Textview样式-->
+    <style name="TextAppearance">
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/twosize</item>
+    </style>
+
+    <style name="CityPickerAnim">
+        <item name="android:windowEnterAnimation">@anim/bottom_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_slide_out</item>
+    </style>
+
+    <style name="top_category_scroll_view_item_text">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="android:actionMenuTextColor">@color/textcolor</item>
+        <item name="actionMenuTextColor">@color/textcolor</item>
+        <item name="android:actionBarSize">@dimen/toolbar_size</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/black</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/black</item>
+        <!--对应EditText编辑时、RadioButton选中、CheckBox等选中时的颜色-->
+        <item name="colorAccent">@color/maincolor</item>
+        <item name="android:textColorPrimary">@color/textcolor</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+    </style>
+
+    <style name="SouSuoCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+
+        <!-- 自定义checkbox样式 -->
+        <item name="android:button">@drawable/btn_check</item>
+    </style>
+
+    <style name="QuanxuanCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+
+        <!-- 自定义全选checkbox样式 -->
+        <item name="android:button">@drawable/btn_health_check</item>
+    </style>
+
+    <!--测量心率显示时间进度条 -->
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_mini</item>
+        >
+    </style>
+    <!-- 对话框风格-->
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialogback</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="myDialogAnim" parent="android:Animation">
+
+        <!-- 进入时的动画 -->
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!-- 退出时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <!-- 定义主题 -->
+    <style name="blackActivityTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="windowActionBar">true</item>
+        <item name="android:actionMenuTextColor">@color/black</item>
+        <item name="actionMenuTextColor">@color/black</item>
+        <item name="android:actionBarSize">@dimen/toolbar_size</item>
+        <!-- 使用 API Level 22 編譯的話，要拿掉前綴字 -->
+        <item name="windowNoTitle">true</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/black</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/black</item>
+        <!--对应EditText编辑时、RadioButton选中、CheckBox等选中时的颜色-->
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!--Window color-->
+        <item name="android:windowBackground">@color/cure</item>
+    </style>
+    <!--&lt;!&ndash; 子项style &ndash;&gt;-->
+    <!--<style name="blackWindowTitleStyle" parent="android:TextAppearance.WindowTitle">-->
+    <!--<item name="android:textColor">#b5b5b5</item>-->
+    <!--</style>-->
+    // 日期选择器
+
+    <style name="time_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="text_size_big">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_size_small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_33</item>
+    </style>
+    <style name="MyTabTextStyle" parent="TextAppearance.Design.Tab">
+        <!--Tab字体的大小-->
+        <!--<item name="android:textSize">@dimen/design_tab_text_size</item>-->
+        <!--&lt;!&ndash;Tab字体的默认的颜色&ndash;&gt;-->
+        <!--<item name="android:textColor">#1d000000</item>-->
+        <!--Tab字体是否为大写-->
+        <item name="textAllCaps">false</item>
+    </style>
+</resources>

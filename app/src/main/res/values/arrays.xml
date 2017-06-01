@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+  <string-array name="tab_titles">
+    <item>综合信息</item>
+    <item>化验单</item>
+    <item>心率</item>
+    <item>血压</item>
+    <item>肺活量</item>
+    <item>舌诊</item>
+    <item>步数</item>
+    <item>睡眠质量</item>
+    <item>身体质量指数</item>
+    <item>体温</item>
+    <item>血糖</item>
+  </string-array>
+  <string-array name="tab_titles_en">
+    <item>General Information</item>
+    <item>Test Report</item>
+    <item>Heart Rate</item>
+    <item>Blood Pressure</item>
+    <item>Vital Capacity</item>
+    <item>Tongue Diagnosis</item>
+    <item>Steps</item>
+    <item>Sleep Quality</item>
+    <item>Body Mass Index</item>
+    <item>Body Temperature</item>
+    <item>Blood Glucose</item>
+  </string-array>
+</resources>

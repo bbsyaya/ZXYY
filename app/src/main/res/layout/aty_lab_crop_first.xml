@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_crop_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rl_lab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhixinyisheng.user.util.cropper.CropImageView
+            android:id="@+id/civ_lab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside" />
+        <TextView
+            android:text="@string/qingjiequjianchaxiangmu"
+            android:textSize="@dimen/x13"
+            android:textColor="#ffffff"
+            android:id="@+id/tv_toast"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/dialog_conner"
+            android:layout_height="@dimen/x25"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+        </TextView>
+    </RelativeLayout>
+</LinearLayout>

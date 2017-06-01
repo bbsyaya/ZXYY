@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/mainleft"
+        android:background="@drawable/btn_white_shape">
+
+        <EditText
+            android:id="@+id/et_problem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/qingtichubaogui"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/twosize" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btn_problem_tijiao"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_gray_color"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_button" />
+    </RelativeLayout>
+
+</LinearLayout>

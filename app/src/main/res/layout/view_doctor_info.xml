@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/homebgc"
+
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/main_color"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_default_pic" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            tools:text="张明玮 大夫"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_avatar"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal" />
+        <TextView
+            android:id="@+id/tv_approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_name"
+            android:layout_marginLeft="15dp"
+            android:text="已认证"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_samll_more"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_department"
+            tools:text="肾内科 石家庄肾病医院"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_avatar"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_samll" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_avatar"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_good_nums"
+                    tools:text="98%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_big" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/haopinglv"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_samll" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_appraise_nums"
+                    tools:text="98"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_big" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/pingjialiang"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_samll" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_see_num"
+                    tools:text="98"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_big" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/liulanliang"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_samll" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_share_en" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_charge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_myincome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/ic_money"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="我的收入"
+                android:textSize="@dimen/font_normal" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_personalizedcharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/ic_gxhsf"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="个性化收费"
+                android:textSize="@dimen/font_normal" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_shu"
+        android:drawablePadding="12dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/mainright"
+        android:paddingTop="10dp"
+        android:text="@string/yishengjianjie"
+        android:textSize="@dimen/font_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/gray_ea" />
+
+    <TextView
+        android:id="@+id/tv_introduce2"
+        tools:text="\t\t张玮纶，男。张玮纶，男。很好的人很好的人很好的人很好的人"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/mainright"
+        android:paddingRight="@dimen/mainright"
+        android:paddingTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:background="@color/homebgc" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+
+    <TextView
+        android:id="@+id/tv_honor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_shu"
+        android:drawablePadding="12dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/mainright"
+        android:paddingTop="10dp"
+        android:text="@string/yishengrongyu"
+        android:textSize="@dimen/font_normal" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/gray_ea" />
+
+    <TextView
+        android:id="@+id/tv_honor2"
+        tools:text="中国男科协会会员\n中国男科协会会员"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="3dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/mainright"
+        android:paddingTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:background="@color/homebgc" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+
+    <TextView
+        android:id="@+id/tv_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_shu"
+        android:drawablePadding="12dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/mainright"
+        android:paddingTop="10dp"
+        android:text="@string/yishengdongtai"
+        android:textSize="@dimen/font_normal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/gray_ea" />
+
+</LinearLayout>

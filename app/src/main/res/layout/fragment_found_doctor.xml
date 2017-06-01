@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+
+    <com.zhixinyisheng.user.view.ClearEditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shp_et"
+        android:drawableLeft="@mipmap/ic_search_edit"
+        android:drawablePadding="5dp"
+        android:hint="请输入症状、疾病、医院、科室、医生名"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textSize="@dimen/font_samll_more" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/cb_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableRight="@drawable/slt_doctor_choose"
+                android:padding="10dp"
+                android:text="全部地区"
+                android:singleLine="true"
+                android:textColor="@color/slt_doctor_choose"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/cb_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableRight="@drawable/slt_doctor_choose"
+                android:padding="10dp"
+                android:text="全部科室"
+                android:singleLine="true"
+                android:textColor="@color/slt_doctor_choose"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/cb_profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableRight="@drawable/slt_doctor_choose"
+                android:padding="10dp"
+                android:text="全部职称"
+                android:singleLine="true"
+                android:textColor="@color/slt_doctor_choose"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.and.yzy.frame.swipyrefreshlayout.SwipyRefreshLayout
+            android:id="@+id/srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srl_direction="both">
+
+            <ListView
+                android:id="@+id/lv_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/gray_ea"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" />
+        </com.and.yzy.frame.swipyrefreshlayout.SwipyRefreshLayout>
+
+        <ListView
+            android:id="@+id/lv_no_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray_ea"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"
+            android:visibility="gone"
+            />
+
+        <include
+            android:id="@+id/popup_area"
+            layout="@layout/popup_doctor_area"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/popup_section"
+            layout="@layout/popup_doctor_section"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/popup_job"
+            layout="@layout/popup_doctor_job"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

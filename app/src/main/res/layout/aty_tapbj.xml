@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/all_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stateListAnimator="@animator/appbar_elevation">
+
+        <include layout="@layout/title_layout" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/tapbj_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/all_rl_title"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x20" >
+
+        <LinearLayout
+            android:id="@+id/tapbj_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/tapbj_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_weight="1"
+                android:maxLength="30"
+                android:hint="@string/qingshuruneirong"
+                android:textSize="@dimen/x12"/>
+
+            <TextView
+                android:id="@+id/tapbj_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tapbj_et"
+                android:layout_toRightOf="@+id/tapbj_et"
+                android:text="30"
+                android:textColor="#00baba"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_below="@+id/tapbj_ll"
+            android:background="#00baba"
+            android:layout_marginTop="@dimen/x5"/>
+    </RelativeLayout>
+
+</RelativeLayout>

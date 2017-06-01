@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/btn_white_shape"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+
+
+        <TextView
+            android:id="@+id/fbtn_one"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/paizhao"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/firstsize"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewline"/>
+
+        <TextView
+            android:id="@+id/fbtn_two"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/congbendixiangce"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/firstsize"
+            />
+
+
+    </LinearLayout>
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/fbtn_three"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginRight="@dimen/x5"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:text="@string/Cancel"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/firstsize"
+        app:buttonColor="@color/white"
+        app:cornerRadius="4dp"
+        app:shadowEnabled="false" />
+</LinearLayout>

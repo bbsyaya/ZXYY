@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialogback"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/date_operator_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y50"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dialog_backgrund" >
+
+            <TextView
+                android:id="@+id/date_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x28"
+                android:text="5月"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textSize="28sp" />
+            <Button 
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x12"
+                android:visibility="invisible"
+                android:background="#00ffffff"
+                android:textColor="#ffffff" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_right"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/y30"
+                android:layout_toRightOf="@+id/date_month"
+                android:src="@drawable/calendar_btn_n1"
+                android:background="#00ffffff"
+                android:layout_centerVertical="true"/>
+            <ImageButton
+                android:id="@+id/imgbtn_lift"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/y30"
+                android:src="@drawable/calendar_btn_n2"
+                android:background="#00ffffff"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialogback"
+            android:orientation="vertical" >
+
+            <com.zhixinyisheng.user.view.calendar.WeekDayView
+                android:id="@+id/week"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <com.zhixinyisheng.user.view.calendar.MonthDateView
+                android:id="@+id/monthDateView"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/week" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

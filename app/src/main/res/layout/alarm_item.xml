@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="@dimen/x10">
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+        <TextView 
+            android:id="@+id/alai_tvt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaaa"/>
+        <TextView 
+            android:id="@+id/alai_tvcf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="aaa1111111111111111111111111111111"/>
+    </LinearLayout>
+    <com.and.yzy.frame.view.switchbutton.SwitchButton
+        android:id="@+id/alai_swbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+        
+    </com.and.yzy.frame.view.switchbutton.SwitchButton>
+
+</RelativeLayout>

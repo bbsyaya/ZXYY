@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dynamic_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical"
+    tools:context="com.zhixinyisheng.user.ui.mydoctor.activity.DynamicDetailActivity">
+
+    <include layout="@layout/include_common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="@dimen/mainright"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/ic_default_pic" />
+
+                <TextView
+                    android:id="@+id/tv_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_avatar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/iv_avatar"
+                    tools:text="张大夫"
+                    android:textColor="@color/textcolor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_avatar"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/iv_avatar"
+                    tools:text="今天 20：00"
+                    android:textColor="@color/hint_text_color" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:background="@color/white"
+                android:padding="@dimen/activity_vertical_margin"
+                tools:text="内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内容内容内容" />
+
+            <com.zhixinyisheng.user.view.MyGridView
+                android:id="@+id/gv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_content"
+                android:background="@color/white"
+                android:numColumns="3"
+                android:padding="@dimen/mainright"
+                android:verticalSpacing="2dp" />
+
+            <TextView
+                android:id="@+id/tv_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_date"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/gv_pic"
+                android:layout_margin="12dp"
+                android:drawableLeft="@drawable/slt_zan"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="0"
+                />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_zan"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_zan"
+                android:text="删除"
+                android:textColor="@color/main_color"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

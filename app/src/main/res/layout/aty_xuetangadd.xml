@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+    <include layout="@layout/title_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+       >
+
+        <EditText
+            android:id="@+id/edittext_blood"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:hint="请输入血糖值"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:maxEms="10"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="请选择测量时间"
+        android:textSize="@dimen/twosize"
+        android:textColor="@color/textcolor"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline"/>
+    <RelativeLayout
+        android:id="@+id/xuetang_ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="早餐前(空腹)"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/textcolor"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"/>
+
+        <CheckBox
+            android:id="@+id/xuetang_checkbox1"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline"/>
+    <RelativeLayout
+        android:id="@+id/xuetang_ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="早餐后"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/textcolor"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"/>
+
+        <CheckBox
+            android:id="@+id/xuetang_checkbox2"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline"/>
+
+    <RelativeLayout
+        android:id="@+id/xuetang_ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="午餐前"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/textcolor"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"/>
+
+        <CheckBox
+            android:id="@+id/xuetang_checkbox3"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline"/>
+
+    <RelativeLayout
+        android:id="@+id/xuetang_ll_4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="午餐后"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/textcolor"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"/>
+
+        <CheckBox
+            android:id="@+id/xuetang_checkbox4"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline"/>
+    <RelativeLayout
+        android:id="@+id/xuetang_ll_5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="晚餐前"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/textcolor"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"/>
+
+        <CheckBox
+            android:id="@+id/xuetang_checkbox5"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline"/>
+    <RelativeLayout
+        android:id="@+id/xuetang_ll_6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="晚餐后"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/textcolor"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"/>
+
+        <CheckBox
+            android:id="@+id/xuetang_checkbox6"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline"/>
+    <RelativeLayout
+        android:id="@+id/xuetang_ll_7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="睡觉前"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/textcolor"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"/>
+
+        <CheckBox
+            android:id="@+id/xuetang_checkbox7"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline"/>
+    <Button
+        android:id="@+id/temp_btn_sure_sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_main_color"/>
+
+</LinearLayout>

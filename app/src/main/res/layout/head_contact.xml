@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_contact_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shp_et"
+            android:drawableLeft="@mipmap/ic_search_edit"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="@string/qingshurulianxirennichenghuobeizhu"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="@dimen/font_samll_more" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_add_contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/ic_btn_jhy"
+                android:textAllCaps="false"
+                android:textColor="@color/textcolor"
+                android:text="@string/jiahaoyou" />
+
+            <Button
+                android:id="@+id/btn_scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/ic_btn_sys"
+                android:textAllCaps="false"
+                android:textColor="@color/textcolor"
+                android:text="@string/saoyisao" />
+
+            <Button
+                android:id="@+id/btn_contacts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/ic_btn_txl"
+                android:textAllCaps="false"
+                android:textColor="@color/textcolor"
+                android:text="@string/tongxunlu" />
+
+            <Button
+                android:id="@+id/btn_ranking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/ic_btn_phb"
+                android:textAllCaps="false"
+                android:textColor="@color/textcolor"
+                android:text="@string/paihangbang" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

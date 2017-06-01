@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_niaodanbaidingliang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/et_niaodanbaidingliang"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:gravity="center_vertical"
+            android:text="@string/niaodanbaidingliang"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/secendsize" />
+
+        <EditText
+            android:id="@+id/et_niaodanbaidingliang"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:gravity="center"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/test_cursor"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_white_shape"
+            android:textSize="@dimen/threesize"
+            android:textColor="@color/textcolor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/et_niaodanbaidingliang"
+            android:gravity="center_vertical"
+            android:text="g/24h"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/twosize" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/empty_bg" />
+</LinearLayout>

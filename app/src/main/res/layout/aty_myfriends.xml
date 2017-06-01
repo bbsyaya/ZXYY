@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_common_title" />
+    <!--<include-->
+        <!--android:id="@+id/title_title"-->
+        <!--layout="@layout/title_layout" />-->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aty_mf_ll_gz"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"/>
+
+
+</LinearLayout>

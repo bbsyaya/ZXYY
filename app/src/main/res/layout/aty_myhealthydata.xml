@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <include
+        layout="@layout/title_layout"/>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/fridd_tvycsj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/yichangshuju"
+                android:textSize="@dimen/twosize"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/fridd_tvhx1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/fridd_tvycsj"
+                android:background="@color/viewline"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fridd_rlv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fridd_tvhx1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/fridd_tv_qbsj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fridd_rlv"
+                android:layout_marginTop="10dp"
+                android:text="@string/quanbushuju"
+                android:textSize="@dimen/twosize"
+                android:layout_marginLeft="20dp"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/fridd_iv_sjjt"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_below="@id/fridd_rlv"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:src="@drawable/rili"/>-->
+
+            <RelativeLayout
+                android:id="@+id/fridd_rl_xm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fridd_tv_qbsj"
+                android:background="@drawable/addfriend_bac"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/fridd_tv_xm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_heartRate"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/twosize"/>
+                <ImageView
+                    android:layout_width="@dimen/jiantou"
+                    android:layout_height="8dp"
+                    android:background="@drawable/xiangxiajiantou_03"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/fragment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fridd_rl_xm"
+                android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

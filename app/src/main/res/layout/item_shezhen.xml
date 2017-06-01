@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:padding="8dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/item_shezhentime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2323"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/threesize"/>
+    <TextView
+        android:id="@+id/item_shezhencontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textcolor"
+        android:text="年三农低价"
+        android:textSize="@dimen/threesize"/>
+
+</LinearLayout>

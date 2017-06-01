@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@mipmap/common_icon_jr_s_add"
+    android:state_pressed="false"/>
+    <item android:drawable="@mipmap/common_icon_jr_n_add_pressed"/>
+</selector>

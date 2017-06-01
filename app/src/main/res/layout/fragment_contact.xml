@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <ExpandableListView
+        android:id="@+id/elv_friends"
+        android:childDivider="@color/viewline"
+        android:divider="@color/viewline"
+        android:dividerHeight="1px"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ExpandableListView>
+</LinearLayout>

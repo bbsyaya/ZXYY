@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/all_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stateListAnimator="@animator/appbar_elevation">
+        <include layout="@layout/title_layout" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/tap_rlxj"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/all_rl_title"
+        android:background="@drawable/tv_selector">
+        <ImageView
+            android:id="@+id/tap_ivxj"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/hjcyy_btn_xj"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tap_ivxj"
+            android:text="@string/xinjianchangyongyu"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_centerVertical="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    <com.and.yzy.frame.view.delete.SwipeMenuListView
+        android:id="@+id/tap_smlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#cccccc"
+        android:dividerHeight="1px"
+        android:background="@color/homebgc"
+        android:layout_below="@+id/tap_rlxj"/>
+
+
+
+
+</RelativeLayout>

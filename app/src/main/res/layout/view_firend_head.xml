@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/aty_mf_ll_gz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/aty_mf_ll_iv_gz_xl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/myfriends_btn_wdgz_n2x"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/aty_mf_ll_iv_gz_sl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/myfriends_btn_wdgz_s2x"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/wodeguanzhu"
+            android:textSize="@dimen/firstsize" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.hyphenate.easeui.widget.ListViewForScrollView
+            android:id="@+id/aty_mf_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/friendsLeft"
+            android:layout_marginRight="@dimen/friendsRight"
+            android:layout_marginTop="5dp"
+            android:divider="@color/viewline"
+            android:dividerHeight="1px"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mypatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_mypatient_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/myfriends_btn_wdgz_n2x"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_mypatient_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/myfriends_btn_wdgz_s2x"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/wodehuanzhe"
+            android:textSize="@dimen/firstsize" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.hyphenate.easeui.widget.ListViewForScrollView
+            android:id="@+id/lv_mypatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/friendsLeft"
+            android:layout_marginRight="@dimen/friendsRight"
+            android:divider="@color/viewline"
+            android:dividerHeight="1px"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mydoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_mydoctor_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/myfriends_btn_wdgz_n2x"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_mydoctor_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/myfriends_btn_wdgz_s2x"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/wodeyisheng"
+            android:textSize="@dimen/firstsize" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    <com.hyphenate.easeui.widget.ListViewForScrollView
+        android:id="@+id/lv_mydoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:divider="@color/viewline"
+        android:layout_marginLeft="@dimen/friendsLeft"
+        android:layout_marginRight="@dimen/friendsRight"
+        android:dividerHeight="1px"
+        android:scrollbars="none"
+        android:visibility="visible" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_myfriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/iv_myfriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/myfriends_btn_wdgz_s2x"
+            android:visibility="invisible" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/wodehaoyou"
+            android:textSize="@dimen/firstsize" />
+    </LinearLayout>
+</LinearLayout>

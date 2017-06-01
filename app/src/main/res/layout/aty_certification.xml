@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <include layout="@layout/title_layout" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/secendSize"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:text="请上传胸牌或执业证书"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/threesize"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="请确保姓名、医院、职称、头像等信息清晰可见"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/threesize"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="上传资料仅用于认证，患者及第三方不可见"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/threesize"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="资料越齐全，越有助于通过认证"/>
+    <GridView
+        android:id="@+id/gv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contenet"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/homebgc"
+        android:gravity="center"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="2dp" />
+</LinearLayout>

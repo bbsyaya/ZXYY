@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/AAAAAA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f5f5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="A"
+            android:textSize="@dimen/twosize" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <!--com.shenboshi.user.zxing.view.CircularImage-->
+        <ImageView
+            android:id="@+id/imageview123"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:src="@mipmap/ic_launcher2" />
+
+        <ImageView
+            android:id="@+id/mao"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:src="@drawable/maozi"
+            android:layout_marginLeft="@dimen/x39"
+            android:layout_marginTop="@dimen/x4"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageview123">
+
+            <TextView
+                android:id="@+id/textview123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/twosize" />
+
+            <CheckBox
+                android:id="@+id/checkbox123"
+                style="@style/SouSuoCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:enabled="false"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

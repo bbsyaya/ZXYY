@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无搜索结果"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/font_normal" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/homebgc"
+        android:drawableLeft="@mipmap/ic_shu"
+        android:drawablePadding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/mainright"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:text="推荐医生"
+        android:textSize="@dimen/font_normal"
+        />
+</LinearLayout>

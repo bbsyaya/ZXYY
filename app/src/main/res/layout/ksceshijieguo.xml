@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/xin_iv"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x150"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/img_xinlv" />
+
+        <LinearLayout
+            android:id="@+id/xinlv_fanwei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xin_iv"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/xinlvzhi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/xinlv"
+                android:textColor="#00b9bb"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:layout_marginRight="@dimen/mainleft"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_white_shape">
+
+                <TextView
+                    android:id="@+id/tv_person_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/cankaofanwei"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/twosize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_person_signature"
+                    android:layout_alignStart="@+id/tv_person_signature"
+                    android:layout_below="@+id/tv_person_signature"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/zhengchang60100"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp"
+                    android:id="@+id/textView15" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jinggao4059"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/textView15"
+                    android:layout_alignLeft="@+id/textView15"
+                    android:layout_alignStart="@+id/textView15"
+                    android:id="@+id/textView16" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weixian4060"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/textView16"
+                    android:layout_alignLeft="@+id/textView16"
+                    android:layout_alignStart="@+id/textView16" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/xueya_fanwei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xin_iv"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/xinlvzhi_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高压："
+                    android:textColor="#00b9bb"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/xinlvzhi_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x45"
+                    android:text="低压："
+                    android:textColor="#00b9bb"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/canshu_iv1"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="@dimen/x70"-->
+                <!--android:layout_below="@+id/canshu_iv"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginLeft="@dimen/x20"-->
+                <!--android:layout_marginRight="@dimen/x20"-->
+                <!--android:layout_marginTop="@dimen/x30"-->
+                <!--android:background="@drawable/img_xueyacankao" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:layout_marginRight="@dimen/mainright"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_white_shape">
+
+                <TextView
+                    android:id="@+id/tv_person_signature2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="参考值:"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/twosize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_person_signature2"
+                    android:layout_alignStart="@+id/tv_person_signature2"
+                    android:layout_below="@+id/tv_person_signature2"
+                    android:layout_marginTop="3dp"
+                    android:text="正常:收缩压≤130、舒张压≤85"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp"
+                    android:id="@+id/textView13" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="警告:130＜收缩压≤150或85＜舒张压≤100"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/textView13"
+                    android:layout_alignLeft="@+id/textView13"
+                    android:layout_alignStart="@+id/textView13"
+                    android:id="@+id/textView14" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="危险:收缩压＞150或舒张压＞100或收缩压＜90或舒张压＜60"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/textView14"
+                    android:layout_alignLeft="@+id/textView14"
+                    android:layout_alignStart="@+id/textView14" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

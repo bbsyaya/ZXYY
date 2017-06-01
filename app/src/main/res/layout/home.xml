@@ -1,0 +1,234 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_column"
+                android:layout_width="0dp"
+                android:layout_height="50.0dip"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/textview666"
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/white" />
+
+                <com.zhixinyisheng.user.view.ColumnHorizontalScrollView
+                    android:id="@+id/mColumnHorizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_toRightOf="@+id/textview666"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/mRadioGroup_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="-3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingRight="10.0dip" />
+                </com.zhixinyisheng.user.view.ColumnHorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/shade_left"
+                    android:layout_width="10.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/shade_right"
+                    android:layout_width="10.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_more_columns"
+                android:layout_width="30dip"
+                android:layout_height="50.0dip"
+                android:layout_marginRight="6dp">
+
+                <ImageView
+                    android:id="@+id/button_more_columns"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/channel_jiahao" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.and.yzy.frame.view.other.CustomViewPager
+                    android:id="@+id/mViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/homebgc" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff0000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_channel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/iv_gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+
+            <ImageView
+
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/sy_btn_delet2x" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:id="@+id/subscribe_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:paddingBottom="14.0dip">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/my_category_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/MyConcernedItems"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/btn_editor"
+                        android:layout_width="45dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignTop="@+id/my_category_text"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/channel_editor"
+                        android:text="@string/edit"
+                        android:textAllCaps="false"
+                        android:textColor="#F87B7B"
+                        android:textSize="11sp" />
+
+
+                </RelativeLayout>
+
+
+                <com.zhixinyisheng.user.view.DragGrid
+                    android:id="@+id/userGridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="20dip"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:scrollbars="vertical"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="18px" />
+
+
+                <TextView
+                    android:id="@+id/more_category_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/RecommendedExaminationItems"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.zhixinyisheng.user.view.OtherGridView
+                    android:id="@+id/otherGridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginRight="14dip"
+                    android:gravity="center"
+                    android:horizontalSpacing="15dip"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:scrollbars="vertical"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="18px" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_channel_touming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#aa000000">
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

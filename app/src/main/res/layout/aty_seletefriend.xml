@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc">
+
+    <include
+        android:id="@+id/title_title"
+        layout="@layout/title_layout"/>
+
+    <LinearLayout
+        android:id="@+id/aty_selfri_ll_qx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#ebebeb">
+
+
+        <RelativeLayout
+            android:id="@+id/aty_selfri_rl_qd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/aty_selfri_cb_qd"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/btn_health_ok" />
+
+            <TextView
+                android:id="@+id/tv_aty_selectfriend_queding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/aty_selfri_cb_qd"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:text="@string/confirm"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/threesize" />
+        </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aty_selfri_rl_qx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+            <CheckBox
+                android:id="@+id/aty_selfri_cb_qx"
+                style="@style/QuanxuanCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:checked="false"
+                android:scaleX="0.4"
+                android:scaleY="0.4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/aty_selfri_cb_qx"
+                android:layout_marginLeft="-8dp"
+                android:text="@string/quanxuan"
+                android:layout_centerVertical="true"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/threesize" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/aty_selfri_rl_fris"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_title"
+        android:layout_above="@id/aty_selfri_ll_qx"
+        android:background="@color/homebgc"
+        android:layout_marginBottom="5dp"/>
+
+    <!--<com.zhixinyisheng.user.ui.IM.widget.MyEaseSidebar-->
+        <!--android:id="@+id/sidebar"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:layout_below="@id/title_title"-->
+        <!--android:clickable="true"-->
+        <!--android:layout_above="@+id/aty_selfri_ll_qx"-->
+        <!--android:visibility="gone"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/aty_myf_floating_header"-->
+        <!--android:layout_width="65dp"-->
+        <!--android:layout_height="65dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@color/textcolor1"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--android:paddingRight="5dp"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="30sp"-->
+        <!--android:text="搜"-->
+        <!--android:visibility="gone" />-->
+
+
+</RelativeLayout>

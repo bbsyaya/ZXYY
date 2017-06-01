@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <include layout="@layout/title_layout" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/viewline" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/textcolor"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:text="@string/dingdanjine"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/money_red"
+            android:text="30.00元"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/homebgc">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/secendSize"
+            android:textColor="@color/textcolor"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:text="@string/qingxuanzefuwuleixing"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_ac_alipay"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageView4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/textcolor"
+            android:text="@string/zhifubao"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView4" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ct_btn_selected_s"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homebgc">
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonHeight"
+            android:text="@string/goumai"
+            android:background="@drawable/shape_main_color"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

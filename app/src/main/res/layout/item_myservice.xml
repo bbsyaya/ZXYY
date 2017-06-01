@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/mainright"
+    android:paddingRight="@dimen/mainright"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:id="@+id/ll_ctrl">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/black"
+            android:text="张位注 大夫"
+            />
+        <TextView
+            android:id="@+id/tv_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_name"
+            tools:text="肾内科 石家庄肾病医院"
+            android:textSize="@dimen/font_samll"
+            android:singleLine="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/tv_is_pay"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="未付费"
+                android:textSize="@dimen/font_samll_more"
+                android:textColor="@color/grid_state_focused"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="2016-01-02 02：00"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/font_samll_more"
+                android:textColor="@color/grid_state_focused"
+                android:layout_marginLeft="20dp"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:text="已评价"
+        android:gravity="center_vertical|end"/>
+
+</LinearLayout>

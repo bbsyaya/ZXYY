@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:padding="@dimen/x10"
+    android:background="#ffffff">
+    <ImageView 
+        android:id="@+id/tapi_iv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/shouxie"
+        android:layout_centerVertical="true"/>
+	<TextView 
+	    android:id="@+id/tapi_tv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text=""
+	    android:layout_toRightOf="@+id/tapi_iv"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="@dimen/x10"
+	    android:layout_toLeftOf="@+id/tapi_ivxz"
+	    android:layout_marginRight="@dimen/x10"/>
+	<ImageView 
+	    android:id="@+id/tapi_ivxz"
+	    android:layout_width="18dp"
+	    android:layout_height="18dp"
+	    android:src="@drawable/ct_btn_selected_n"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="@dimen/x10"
+	    android:layout_centerVertical="true"/>
+</RelativeLayout>

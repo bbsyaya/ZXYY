@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/xl_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_below="@+id/rl_top">
+
+        <TextView
+            android:id="@+id/xl_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bloodPressureValue"
+            android:textSize="@dimen/x12" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/xy_ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xl_mv"
+        android:layout_alignLeft="@+id/xl_mv"
+        android:layout_marginTop="@dimen/x5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x3"
+            android:layout_gravity="center_vertical"
+            android:background="#868BDF" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/highBloodPressureCurve" />
+
+        <TextView
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="#009DF8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/lowBloodPressureCurve"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <com.zhixinyisheng.user.view.MyViewBD
+        android:id="@+id/xl_mv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x200"
+        android:layout_below="@+id/xl_rl1"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

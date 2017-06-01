@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:id="@+id/ll_ctrl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:00"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/font_samll" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_hour"
+            android:layout_alignParentRight="true"
+            android:text="3片/次"
+            android:textColor="@color/maincolor"
+            android:textSize="@dimen/font_big" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hour"
+            android:layout_marginTop="15dp"
+            android:text="药的名字"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/font_big" />
+
+        <RelativeLayout
+            android:id="@+id/rl_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name">
+
+            <TextView
+                android:id="@+id/tv_note1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="备注："
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/font_samll" />
+
+            <TextView
+                android:id="@+id/tv_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_note1"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/tv_note1"
+                android:text="有就显示没有就不显示"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/font_samll" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_un_use_medicine"
+       />
+</LinearLayout>

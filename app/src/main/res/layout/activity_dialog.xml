@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#00ffffff"
+        tools:ignore="UselessParent" >
+
+        <TextView
+            android:id="@+id/ewm_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y10"
+            android:text="江小鱼"
+            android:textColor="#000000"
+            android:textSize="@dimen/x12"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/ewm_XB"
+            android:layout_width="@dimen/x16"
+            android:layout_height="@dimen/x16"
+            android:layout_alignBottom="@+id/ewm_Name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ewm_Name"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/ewm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ewm_Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x5"
+            android:text="ID: 123456789"
+            android:textColor="#666666"
+            android:textSize="@dimen/x12"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/ewm_TX"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ewm_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@mipmap/ic_launcher2"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="75dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/ewm_TX"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_toLeftOf="@+id/ewm_TX"
+            android:background="#0069bb" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="76dp"
+            android:layout_height="1dp"
+            android:layout_above="@+id/view1"
+            android:layout_toRightOf="@+id/ewm_TX"
+            android:background="#0069bb" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="1dp"
+            android:layout_height="226dp"
+            android:layout_alignTop="@+id/view1"
+            android:layout_toLeftOf="@+id/view1"
+            android:background="#0069bb" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="1dp"
+            android:layout_height="227dp"
+            android:layout_alignTop="@+id/view1"
+            android:layout_toRightOf="@+id/view2"
+            android:background="#0069bb" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="203dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/view4"
+            android:layout_alignRight="@+id/view4"
+            android:background="#0069bb" />
+
+        <ImageView
+            android:id="@+id/img_erweima"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/zwt_03"
+            android:layout_below="@+id/view1"
+            android:layout_centerHorizontal="true"
+             />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="@dimen/x30"
+            android:layout_below="@+id/view5"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>

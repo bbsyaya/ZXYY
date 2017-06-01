@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_medicine_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/mainleft"
+                android:paddingRight="@dimen/mainleft">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/medicine_name"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/font_samll" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv1"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/edit_hint_medicine_name"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_samll"
+                    android:editable="false"
+                    android:focusable="false"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/mainleft"
+                android:paddingRight="@dimen/mainleft">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/use_medicine_measure"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/font_samll" />
+
+                <EditText
+                    android:id="@+id/et_measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv2"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/edit_hint_use_medicine_measure"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_samll" />
+            </RelativeLayout>
+            <com.zhixinyisheng.user.view.MaxListView
+                android:id="@+id/lv_remind_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:divider="@color/homebgc"
+                android:dividerHeight="1dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/mainleft"
+                android:paddingRight="@dimen/mainleft">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/start_date"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/font_samll" />
+
+                <EditText
+                    android:id="@+id/et_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv4"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/ic_wanshan_xiangyou"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/remind_time_please_choose"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_samll" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/mainleft"
+                android:paddingRight="@dimen/mainleft">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/end_date"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/font_samll" />
+
+                <EditText
+                    android:id="@+id/et_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv5"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/ic_wanshan_xiangyou"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/remind_time_please_choose"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_samll" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/mainleft"
+                android:paddingRight="@dimen/mainleft"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/voice_remind"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/font_samll" />
+
+                <com.hyphenate.easeui.widget.EaseSwitchButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    />
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/mainleft"
+                android:paddingRight="@dimen/mainleft">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/note"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/font_samll" />
+
+                <EditText
+                    android:id="@+id/et_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv7"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/ic_wanshan_xiangyou"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/note_please_input"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_samll" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/mainleft"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_big"
+            android:background="@drawable/btn_laboratory_shape"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_big"
+            android:background="@drawable/btn_laboratory_shape"
+            />
+    </LinearLayout>
+</LinearLayout>

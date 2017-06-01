@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/mainleft"
+    android:paddingRight="@dimen/mainleft">
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/remind_time"
+        android:textColor="@color/gray_33"
+        android:textSize="@dimen/font_samll" />
+
+    <EditText
+        android:id="@+id/et_remind_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv3"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:editable="false"
+        android:focusable="false"
+        android:gravity="end|center_vertical"
+        android:hint="@string/remind_time_please_choose"
+        android:singleLine="true"
+        android:textSize="@dimen/font_samll"
+        android:layout_toLeftOf="@+id/cb_check"
+        />
+    <ImageView
+        android:id="@+id/cb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_remind_add"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:layout_marginLeft="5dp"
+        />
+</RelativeLayout>

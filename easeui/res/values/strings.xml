@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fenxiangyishengmingpian">[Share]</string>
+    <string name="zhongyaotishi">Tips</string>
+    <string name="xuyaokaiqishexiangtouquanxian">Need to open the camera permissions!</string>
+    <string name="zanshimeiyouxinxiaoxi">There is no new conversation yet</string>
+    <string name="xinpengyou">New Contact</string>
+    <string name="soshujiu">SOS</string>
+    <string name="haoyouxiaoxituisong">Contact message push</string>
+    <string name="zhongyaotongzhi">Important Notice</string>
+    <string name="chakanjiankangshujushenqing">Check health data</string>
+    <string name="yichangshuju">Abnormal data</string>
+    <string name="yishirenzhengshenhejieguo">Certification</string>
+    <string name="yonghudingdan">User Order</string>
+    <string name="zhixinyisheng">Intimate Doctor</string>
+    <string name="yitongyi">Approved</string>
+    <string name="yizuofei">Void</string>
+    <string name="tongyi">Agree</string>
+    <string name="yishengrenzhengshenhejieguo">Certification</string>
+    <string name="haoyoumeiyouid">Friends do not have ID</string>
+    <string name="haoyoumeiyoudianhua">Friends have no phone calls</string>
+    <string name="tongyichenggong">Agreed to succeed</string>
+    <string name="tongyishibai">Agree to fail!</string>
+    <string name="shenqingchengweinindehaoyou">\u0020applied to be your friend</string>
+    <string name="yijingtongyinindechakanjiankangshujushenqing">\u0020has agreed to your application for viewing health data</string>
+    <string name="yitongyinindehaoyouqingqiu">\u0020has agreed to your friend\'s request</string>
+    <string name="qingqiuchakannindejiankangshuju">\u0020request to view your health data</string>
+</resources>

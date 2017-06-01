@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_ctrl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/homebgc" />
+
+    <TextView
+        android:id="@+id/tv_contenet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dp"
+        android:maxLength="60"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="@dimen/font_samll" />
+
+
+    <com.zhixinyisheng.user.view.MyGridView
+        android:id="@+id/gv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contenet"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:numColumns="3"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:scrollbars="none"
+        android:verticalSpacing="2dp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gv_pic"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="2013年8月12日 20：20"
+        android:textColor="@color/hint_text_color"
+        android:textSize="@dimen/font_samll_more" />
+
+    <TextView
+        android:id="@+id/tv_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_date"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/slt_zan"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="20" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_zan"
+        android:layout_alignTop="@+id/tv_zan"
+        android:layout_toLeftOf="@+id/tv_zan"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@mipmap/ic_delet"
+        android:visibility="gone" />
+</RelativeLayout>

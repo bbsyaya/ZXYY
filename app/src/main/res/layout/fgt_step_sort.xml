@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_step_sort" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/viewline" />
+    </LinearLayout>
+
+    <com.and.yzy.frame.swipyrefreshlayout.SwipyRefreshLayout
+        android:id="@+id/srl_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        app:srl_direction="bottom">
+
+        <ListView
+            android:id="@+id/lv_step_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/viewline"
+            android:dividerHeight="1px" />
+    </com.and.yzy.frame.swipyrefreshlayout.SwipyRefreshLayout>
+</LinearLayout>

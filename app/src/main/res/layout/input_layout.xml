@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/radius_drawable_bg"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <LinearLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/login_btn_sj"/>
+
+            <EditText
+                android:id="@+id/et_acount"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:hint="@string/PleaseInputPhone"
+                android:cursorVisible="true"
+                android:textColorHint="@color/shallowColor"
+                android:textCursorDrawable="@drawable/test_cursor"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:padding="5dip"
+                android:textSize="@dimen/twosize"
+                android:singleLine="true"
+                android:textColor="@color/textcolor"/>
+            <RelativeLayout
+                android:id="@+id/rl_phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/login_btn_ch"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:id="@+id/input_layout_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/login_btn_sz" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:hint="@string/PleaseInputPassword"
+                android:cursorVisible="true"
+                android:textColorHint="@color/shallowColor"
+                android:inputType="textPassword"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+                android:textCursorDrawable="@drawable/test_cursor"
+                android:maxLength="20"
+                android:minLines="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textSize="@dimen/twosize"
+                android:textColor="@color/textcolor"/>
+            <RelativeLayout
+                android:id="@+id/rl_pswlook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_eyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

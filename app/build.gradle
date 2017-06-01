@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    lintOptions {
+        abortOnError false
+    }
+    defaultConfig {
+        applicationId "com.zhixinyisheng.user"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 20170504
+        versionName "4.4.9"//4.4.0
+
+        // 65536
+        multiDexEnabled true
+    }
+    //签名配置
+    signingConfigs {
+        debugConfig {
+            keyAlias "zhixinyisheng"
+            keyPassword "zhixinyisheng"
+            storeFile file("/Users/kaifa1111/AndroidProject/ZXYY/zhixinyisheng.jks")//改成你们自己的地址
+            storePassword "zhixinyisheng"
+        }
+        releaseConfig {
+            keyAlias "zhixinyisheng"
+            keyPassword "zhixinyisheng"
+            storeFile file("/Users/kaifa1111/AndroidProject/ZXYY/zhixinyisheng.jks")//改成你们自己的地址
+            storePassword "zhixinyisheng"
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debugConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.releaseConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /*jni*/
+    sourceSets.main {
+        jni.srcDirs = []
+    }
+
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+
+        // 65536
+        preDexLibraries = false
+    }
+
+
+}
+
+dependencies {
+    compile project(':andframe')
+    compile project(':easeui')
+    compile files('libs/jpush-android-2.1.3.jar')
+    compile files('libs/achartengine-1.0.0.jar')
+    compile files('libs/parse-android-1.13.0.jar')
+    compile files('libs/bolts-tasks-1.4.0.jar')
+    compile project(':flycodialog_lib')
+    compile project(':galleryfinal')
+    compile project(':magicindicator')
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile 'com.karumi:dexter:2.2.2'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.0.4@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.0.4@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.6@aar'
+    compile 'com.android.support:support-v4:24.1.1'
+//    compile 'com.android.support:cardview-v7:24.1.1'
+    compile 'com.android.support:design:24.0.0'
+    compile files('libs/alipaySdk-20161222.jar')
+//    compile 'com.rmtheis:tess-two:6.0.0'
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/empty_bg"
+        android:layout_marginLeft="0dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/fridd_it_tvn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蛋白质"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/twosize"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/empty_bg"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/fridd_it_tvs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蛋白质"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/twosize"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxEms="3"
+            android:layout_alignTop="@+id/fridd_danwei"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-5dp"
+            android:id="@+id/textView17" />
+        <TextView
+            android:id="@+id/fridd_danwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2323"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tv_middle"
+            android:textSize="@dimen/twosize"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/empty_bg"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/fridd_it_tvr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蛋白质"
+            android:textSize="@dimen/twosize"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/empty_bg"
+        android:layout_marginRight="0dp"/>
+
+</LinearLayout>

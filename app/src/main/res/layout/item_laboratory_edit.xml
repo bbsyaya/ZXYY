@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/homebgc">
+    <EditText
+        android:id="@+id/et_lab_chinese"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="尿常规尿常规鸟擦稍"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/test_cursor"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/threesize"
+        android:textColor="@color/textcolor"
+        android:background="@drawable/btn_white_shape" />
+    <EditText
+        android:id="@+id/et_lab_data"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="1.15"
+        android:layout_marginLeft="180dp"
+        android:maxLength="20"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/test_cursor"
+        android:textSize="@dimen/threesize"
+        android:textColor="@color/textcolor"
+        android:background="@drawable/btn_white_shape" />
+    <EditText
+        android:id="@+id/et_lab_unit"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="/ul"
+        android:layout_marginLeft="260dp"
+        android:maxLength="9"
+        android:singleLine="true"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/test_cursor"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/threesize"
+        android:textColor="@color/textcolor"
+        android:background="@drawable/btn_white_shape" />
+
+</RelativeLayout>

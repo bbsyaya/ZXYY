@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="?selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="取消"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="?selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="确定"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <com.and.yzy.frame.view.dialog.WheelRecyclerView
+            android:id="@+id/wheel_province"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:selectWidth="80dp"/>
+
+        <com.and.yzy.frame.view.dialog.WheelRecyclerView
+            android:id="@+id/wheel_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:selectWidth="80dp"/>
+
+        <!--<com.and.yzy.frame.view.dialog.WheelRecyclerView-->
+            <!--android:id="@+id/wheel_county"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--app:dividerWidth="80dp"/>-->
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_problem"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="@dimen/mainleft"
+                android:background="@drawable/shp_et"
+                android:gravity="top"
+                android:hint="@string/qingtianxieneirong"
+                android:padding="8dp"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/twosize" />
+
+
+            <com.zhixinyisheng.user.view.MyGridView
+                android:id="@+id/gv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_contenet"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/homebgc"
+                android:gravity="center"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="2dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+
+    <Button
+        android:id="@+id/btn_problem_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/mainleft"
+        android:layout_marginRight="@dimen/mainright"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_gray_color"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twosize"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

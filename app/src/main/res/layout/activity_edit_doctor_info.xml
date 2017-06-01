@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_edit_doctor_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <include layout="@layout/include_common_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:gravity="top"
+        android:padding="10dp"
+        android:background="@drawable/shp_et"
+        android:textSize="@dimen/font_samll"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/mainleft"
+        android:layout_marginRight="@dimen/mainright"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_main_color"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twosize" />
+
+</LinearLayout>

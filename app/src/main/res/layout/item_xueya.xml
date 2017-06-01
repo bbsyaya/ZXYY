@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/homebgc"
+    android:orientation="horizontal"
+    android:padding="@dimen/x8">
+
+    <LinearLayout
+        android:id="@+id/itxy_lld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/itxy_tvt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-5-25"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/itxy_tvsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:gravity="left"
+            android:text="120"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/itxy_tvx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/itxy_tvh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/itxy_tvd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=" mmHg"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/font_normal"
+            />
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/itxy_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_btn_warn_n"
+        android:visibility="gone" />
+
+</RelativeLayout>

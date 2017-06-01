@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/homebgc"
+    android:orientation="vertical"
+    android:id="@+id/ll_ctrl">
+
+    <RelativeLayout
+        android:id="@+id/rl_outer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/homebgc">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hyd_icon_pz"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/iv_isWriting" />
+        <TextView
+            android:id="@+id/tv_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-02-25 14:09"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/secendsize"
+            android:layout_alignTop="@+id/iv_isWriting"
+            android:layout_toRightOf="@+id/iv_isWriting"
+            android:layout_toEndOf="@+id/iv_isWriting" />
+
+        <ImageView
+            android:id="@+id/iv_list_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mainright"
+            android:src="@mipmap/hyd_btn_zk" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_inter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/homebgc"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/line"-->
+            <!--android:layout_marginLeft="@dimen/mainleft"-->
+            <!--android:layout_marginRight="@dimen/mainright"-->
+            <!--android:background="@color/empty_bg" />-->
+
+        <RelativeLayout
+            android:id="@+id/rl_lab_type"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:text="@string/huayanleixing"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/secendsize" />
+
+            <TextView
+                android:id="@+id/tv_inter_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/mainright"
+                android:text="血常规"
+                android:textColor="@color/shallowColor"
+                android:textSize="@dimen/secendsize" />
+        </RelativeLayout>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/line"-->
+            <!--android:layout_marginLeft="@dimen/mainleft"-->
+            <!--android:layout_marginRight="@dimen/mainright"-->
+            <!--android:background="@color/empty_bg" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:text="化验时间"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/secendsize" />
+
+            <TextView
+                android:id="@+id/tv_inter_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/mainright"
+                android:text="2017-01-01"
+                android:textColor="@color/shallowColor"
+                android:textSize="@dimen/secendsize" />
+        </RelativeLayout>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/line"-->
+            <!--android:layout_marginLeft="@dimen/mainleft"-->
+            <!--android:layout_marginRight="@dimen/mainright"-->
+            <!--android:background="@color/empty_bg" />-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_lab_inter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

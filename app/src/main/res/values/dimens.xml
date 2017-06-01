@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--侧滑的宽度-->
+    <dimen name="shadow_width">15.0dip</dimen>
+    <dimen name="slidingmenu_offset">80.0dip</dimen>
+    <!--箭头的宽度-->
+    <dimen name="jiantou">10dp</dimen>
+    <dimen name="rili">23dp</dimen>
+    <dimen name="zxt_top">3dp</dimen>
+    <dimen name="buttonHeight">50dp</dimen>
+    <!--APP字体大小-->
+    <!--以前是16sp-->
+    <dimen name="twosize">14sp</dimen>
+    <dimen name="threesize">13sp</dimen>
+    <dimen name="secendsize">13sp</dimen>
+    <dimen name="secendSize">16sp</dimen>
+    <dimen name="forthSize">11sp</dimen>
+    <!--主页距离页面左边的距离-->
+    <dimen name="mainleft">12dp</dimen>
+    <!--好友列表距左边的距离-->
+    <dimen name="friendsLeft">1dp</dimen>
+    <dimen name="dividing_line">1dp</dimen>
+    <!--好友列表距右边的距离-->
+    <dimen name="friendsRight">5dp</dimen>
+    <dimen name="bushu_left">14dp</dimen>
+    <!--主页距离页面右边的距离-->
+    <dimen name="mainright">12dp</dimen>
+    <!--按钮距离布局最下方的距离-->
+    <dimen name="buttonBottom">20dp</dimen>
+    <!--分享按钮的图标-->
+    <dimen name="jiantou_right">10dp</dimen>
+    <dimen name="line">1px</dimen>
+    <!--IM-->
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">48dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="chat_nick_margin_left">17dp</dimen>
+
+    <dimen name="firstsize">18sp</dimen>
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_samll">14sp</dimen>
+    <dimen name="font_samll_more">12sp</dimen>
+    <dimen name="font_big">18sp</dimen>
+    <dimen name="font_big_more">20sp</dimen>
+    <dimen name="xialakuang">25dp</dimen>
+
+    <dimen name="font_button">18sp</dimen>
+
+    <dimen name="design_navigation_icon_size">20dp</dimen>
+    <dimen name="design_navigation_icon_padding">15dp</dimen>
+</resources>

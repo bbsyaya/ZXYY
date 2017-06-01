@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/homebgc">
+
+    <TextView
+        android:id="@+id/tv_inter_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/mainleft"
+        android:layout_toLeftOf="@+id/tv_inter_data"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="红细胞是的是的是的是的省道"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/secendsize" />
+
+    <TextView
+        android:id="@+id/tv_inter_data"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_white_shape"
+        android:gravity="center"
+        android:textColor="@color/textcolor"
+        android:textCursorDrawable="@drawable/test_cursor"
+        android:textSize="@dimen/secendsize" />
+
+    <TextView
+        android:id="@+id/tv_inter_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/tv_inter_data"
+        android:gravity="center_vertical"
+        android:text="/ul"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/secendsize" />
+
+    <ImageView
+        android:id="@+id/iv_inter_zhexiantu"
+        android:layout_width="@dimen/rili"
+        android:layout_height="@dimen/rili"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/mainright"
+        android:src="@drawable/iv_zhexiantu" />
+    <!--<TextView-->
+    <!--android:id="@+id/tv_inter_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="比重"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_inter_data"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:text="20"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_inter_unit"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:text="ul"/>-->
+
+</RelativeLayout>

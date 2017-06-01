@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc">
+
+    <include
+        android:id="@+id/title_title"
+        layout="@layout/title_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/aty_ino_rl_n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_title"
+        android:padding="20dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/aty_ino_tv_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三方哈斯偶个人"
+            android:textSize="@dimen/twosize"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aty_ino_rl_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aty_ino_rl_n"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="80dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/aty_ino_tv_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三方哈斯偶个人"
+            android:textSize="@dimen/twosize"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/aty_ino_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="@dimen/mainleft"
+        android:layout_marginRight="@dimen/mainright"
+        android:background="@drawable/shape_main_color"
+        android:text="@string/zhijiehuifu"
+        android:textSize="@dimen/twosize"
+        android:textColor="@color/white"/>
+
+
+
+</RelativeLayout>

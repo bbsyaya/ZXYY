@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x300"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@color/homebgc"
+        android:orientation="vertical" 
+        >
+
+        <RelativeLayout
+            android:id="@+id/hydzx_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x5">
+
+            <TextView
+                android:id="@+id/hydzx_tvti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="比重值" 
+                android:textSize="@dimen/x12"/>
+        </RelativeLayout>
+
+        <com.zhixinyisheng.user.view.MyViewTW
+            android:id="@+id/hydzx_mv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_above="@+id/hydzx_ll1"
+            android:layout_below="@id/hydzx_rl1" />
+
+        <LinearLayout
+            android:id="@+id/hydzx_ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" 
+            android:layout_marginBottom="@dimen/x5">
+
+            <TextView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x3"
+                android:layout_gravity="center_vertical"
+                android:background="#868BDF" />
+
+            <TextView
+                android:id="@+id/hydzx_tvna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="步数曲线" 
+                android:textSize="@dimen/x12"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

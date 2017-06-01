@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_gubingzhuananmei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/gubingzhuananmei"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_gubingzhuananmei"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_gubingzhuananmei"
+                    android:gravity="center_vertical"
+                    android:text="U/L"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <ImageView
+                    android:id="@+id/gubingzhuananmei_zhexiantu"
+                    android:layout_width="@dimen/rili"
+                    android:layout_height="@dimen/rili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:src="@drawable/iv_zhexiantu"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_gubingxianjizhuananmei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/gubingzhuananxiananmei"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_gubingxianjizhuananmei"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_gubingxianjizhuananmei"
+                    android:gravity="center_vertical"
+                    android:text="U/L"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <ImageView
+                    android:id="@+id/gubingxianjizhuananmei_zhexiantu"
+                    android:layout_width="@dimen/rili"
+                    android:layout_height="@dimen/rili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:src="@drawable/iv_zhexiantu"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_gucaozhuananmei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/gucaozhuananmei"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_gucaozhuananmei"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_gucaozhuananmei"
+                    android:gravity="center_vertical"
+                    android:text="U/L"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <ImageView
+                    android:id="@+id/gucaozhuananmei_zhexiantu"
+                    android:layout_width="@dimen/rili"
+                    android:layout_height="@dimen/rili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:src="@drawable/iv_zhexiantu"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_zongdanbai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/zongdanbai"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_zongdanbai"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_zongdanbai"
+                    android:gravity="center_vertical"
+                    android:text="g/L"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <ImageView
+                    android:id="@+id/zongdanbai_zhexiantu"
+                    android:layout_width="@dimen/rili"
+                    android:layout_height="@dimen/rili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:src="@drawable/iv_zhexiantu"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_baidanbai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/baidanbai"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_baidanbai"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_baidanbai"
+                    android:gravity="center_vertical"
+                    android:text="g/L"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <ImageView
+                    android:id="@+id/baidanbai_zhexiantu"
+                    android:layout_width="@dimen/rili"
+                    android:layout_height="@dimen/rili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:src="@drawable/iv_zhexiantu"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_qiudanbai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/qiudanbai"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_qiudanbai"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_qiudanbai"
+                    android:gravity="center_vertical"
+                    android:text="U/L"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <ImageView
+                    android:id="@+id/qiudanbai_zhexiantu"
+                    android:layout_width="@dimen/rili"
+                    android:layout_height="@dimen/rili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:src="@drawable/iv_zhexiantu"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_zongdanhongsu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/zongdanhongsu"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_zongdanhongsu"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_zongdanhongsu"
+                    android:gravity="center_vertical"
+                    android:text="μmmol/L"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <ImageView
+                    android:id="@+id/zongdanhongsu_zhexiantu"
+                    android:layout_width="@dimen/rili"
+                    android:layout_height="@dimen/rili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:src="@drawable/iv_zhexiantu"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_ganyousanzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/ganyousanzhi"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_ganyousanzhi"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_ganyousanzhi"
+                    android:gravity="center_vertical"
+                    android:text="mmol/L"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <ImageView
+                    android:id="@+id/ganyousanzhi_zhexiantu"
+                    android:layout_width="@dimen/rili"
+                    android:layout_height="@dimen/rili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:src="@drawable/iv_zhexiantu"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_zongdanguchun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:gravity="center_vertical"
+                    android:text="@string/zongdanguchun"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_zongdanguchun"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_zongdanguchun"
+                    android:gravity="center_vertical"
+                    android:text="mmol/L"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <ImageView
+                    android:id="@+id/zongdanguchun_zhexiantu"
+                    android:layout_width="@dimen/rili"
+                    android:layout_height="@dimen/rili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:src="@drawable/iv_zhexiantu"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_gaomiduzhidanbai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/et_gaomiduzhidanbai"
+                    android:gravity="center_vertical"
+                    android:text="@string/gaomiduzhidanbai"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <EditText
+                    android:id="@+id/et_gaomiduzhidanbai"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/test_cursor"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize"
+                    android:background="@drawable/btn_white_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/et_gaomiduzhidanbai"
+                    android:gravity="center_vertical"
+                    android:text="mmol/L"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/secendsize" />
+
+                <ImageView
+                    android:id="@+id/gaomiduzhidanbai_zhexiantu"
+                    android:layout_width="@dimen/rili"
+                    android:layout_height="@dimen/rili"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:src="@drawable/iv_zhexiantu"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/empty_bg" />
+            <TextView
+                android:id="@+id/tv_bottom_gangongneng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/homebgc"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/fl_xinlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/homebgc">
+        <ImageView
+            android:id="@+id/iv_rili"
+            android:layout_width="@dimen/rili"
+            android:layout_height="@dimen/rili"
+            android:background="@drawable/rili"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homebgc">
+        <RelativeLayout
+            android:id="@+id/xl_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x5" >
+
+            <TextView
+                android:id="@+id/xl_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/home_bmi"
+                android:textSize="@dimen/x12"/>
+
+            <!--<Button-->
+            <!--android:id="@+id/xl_ivr"-->
+            <!--android:layout_width="@dimen/x20"-->
+            <!--android:layout_height="@dimen/y15"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/calendarn" />-->
+        </RelativeLayout>
+
+        <com.zhixinyisheng.user.view.MyViewBD
+            android:id="@+id/xl_mv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x180"
+            android:layout_below="@id/xl_rl1"
+            android:layout_marginTop="@dimen/zxt_top"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10" />
+
+        <LinearLayout
+            android:id="@+id/xl_ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xl_mv"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x5"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x3"
+                android:layout_gravity="center_vertical"
+                android:background="#868BDF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="@string/BodyMassIndexCurve" />
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:id="@+id/xl_v1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x1"-->
+        <!--android:layout_below="@id/xl_ll1"-->
+        <!--android:layout_marginTop="@dimen/x5"-->
+        <!--android:background="#dddddd" />-->
+
+        <com.and.yzy.frame.view.listview.ListViewForScrollView
+            android:id="@+id/xl_purflv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#ffff0000"
+            android:divider="#cccccc"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_marginRight="@dimen/mainright"
+            android:dividerHeight="1.0px"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#ffffff"
+            android:smoothScrollbar="false"
+            android:layout_below="@+id/xl_ll1">
+        </com.and.yzy.frame.view.listview.ListViewForScrollView>
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

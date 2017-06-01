@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+    <include layout="@layout/title_layout" />
+    <RelativeLayout
+        android:id="@+id/rl_zhuren"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_viewgroup_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/deepColor"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:text="主任医师"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline" />
+    <RelativeLayout
+        android:id="@+id/rl_fuzhuren"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_viewgroup_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/deepColor"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:text="副主任医师"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline" />
+    <RelativeLayout
+        android:id="@+id/rl_zhuzhi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_viewgroup_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/deepColor"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:text="主治医师"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline" />
+    <RelativeLayout
+        android:id="@+id/rl_zhuyuan"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_viewgroup_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/deepColor"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:text="住院医师"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline" />
+</LinearLayout>

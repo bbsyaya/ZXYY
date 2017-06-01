@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_evaluate_doctor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical"
+    tools:context="com.zhixinyisheng.user.ui.mydoctor.activity.EvaluateDoctorActivity">
+
+    <include layout="@layout/include_common_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/iv_avatar"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp"
+            tools:text="张大夫" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_doctor"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_doctor"
+            android:text="大夫" />
+
+
+        <TextView
+            android:id="@+id/tv_physician"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_doctor"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_tag"
+            tools:text="高级医师" />
+
+        <TextView
+            android:id="@+id/tv_organization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_doctor"
+            android:layout_below="@+id/tv_doctor"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/font_samll_more"
+            android:visibility="visible"
+            tools:text="石家庄肾病医院" />
+
+        <TextView
+            android:id="@+id/tv_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_organization"
+            android:layout_below="@+id/tv_doctor"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_organization"
+            android:singleLine="true"
+            android:textSize="@dimen/font_samll_more"
+            tools:text="内科室" />
+
+        <TextView
+            android:id="@+id/tv_be_good_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_organization"
+            android:layout_below="@+id/tv_organization"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            tools:text="擅长疾病：肾病" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_be_good_at"
+            android:layout_below="@+id/tv_be_good_at"
+            android:layout_marginTop="7dp"
+            android:background="@color/gray_ea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_avatar"
+            android:layout_alignLeft="@+id/tv_be_good_at"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_moeny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btn_answer_normal"
+                tools:text="￥30" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/font_samll_more"
+                tools:text="500人购买" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_ea" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:padding="@dimen/mainright"
+        android:text="@string/ninduiyishengdefuwumanyima"
+        android:textSize="@dimen/font_normal" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/tb_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/slt_star"
+            android:gravity="center_horizontal"
+            android:text="@string/feichangmanyi"
+            android:textSize="@dimen/font_big" />
+
+        <RadioButton
+            android:id="@+id/tb_two"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/slt_star"
+            android:gravity="center_horizontal"
+            android:text="@string/manyi"
+
+            android:textSize="@dimen/font_big" />
+
+        <RadioButton
+            android:id="@+id/tb_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/slt_star"
+            android:gravity="center_horizontal"
+            android:text="@string/bumanyi"
+            android:textSize="@dimen/font_big" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/mainleft"
+        android:layout_marginRight="@dimen/mainright"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_main_color"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twosize" />
+</LinearLayout>

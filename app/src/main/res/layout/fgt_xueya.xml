@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/homebgc">
+
+        <ImageView
+            android:id="@+id/iv_rili"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:background="@drawable/rili" />
+
+        <LinearLayout
+            android:id="@+id/ll_xueyace"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/iv_zice"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:background="@drawable/zice" />
+
+            <ImageView
+                android:id="@+id/iv_shouhuan"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/btn_shouhuan" />
+
+            <ImageView
+                android:id="@+id/iv_shouxie"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shouxie" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_xinlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/homebgc">
+
+            <RelativeLayout
+                android:id="@+id/xl_rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x5">
+
+                <TextView
+                    android:id="@+id/xl_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bloodPressureValue"
+                    android:textSize="@dimen/x12" />
+
+            </RelativeLayout>
+
+            <com.zhixinyisheng.user.view.MyViewBD
+                android:id="@+id/xl_mv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:layout_below="@id/xl_rl1"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/zxt_top" />
+
+            <LinearLayout
+                android:id="@+id/xy_ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xl_mv"
+                android:layout_marginLeft="@dimen/x38"
+                android:layout_marginTop="@dimen/x5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x3"
+                    android:layout_gravity="center_vertical"
+                    android:background="#868BDF" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="@string/highBloodPressureCurve" />
+
+                <TextView
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:background="#009DF8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:text="@string/lowBloodPressureCurve" />
+            </LinearLayout>
+
+            <!--<View-->
+            <!--android:id="@+id/xl_v1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/x1"-->
+            <!--android:layout_below="@id/xl_ll1"-->
+            <!--android:layout_marginTop="@dimen/x5"-->
+            <!--android:background="#dddddd" />-->
+
+            <com.and.yzy.frame.view.listview.ListViewForScrollView
+                android:id="@+id/xl_purflv"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/xy_ll1"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:layout_marginRight="@dimen/mainright"
+                android:cacheColorHint="#ffff0000"
+                android:divider="#cccccc"
+                android:dividerHeight="1.0px"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="#ffffff"
+                android:scrollbars="none"
+                android:smoothScrollbar="false"></com.and.yzy.frame.view.listview.ListViewForScrollView>
+
+            <TextView
+                android:id="@+id/tv_bottom_xueya"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/xl_purflv"
+                android:background="@color/homebgc" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

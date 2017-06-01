@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc">
+    <RelativeLayout
+        android:id="@+id/xy_rlc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <include layout="@layout/title_layout" />
+    </RelativeLayout>
+    <com.hyphenate.easeui.widget.photoview.EasePhotoView
+        android:id="@+id/epv_asi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/xy_rlc"
+        android:scaleType="fitCenter"/>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fenxiangyishengmingpian">[分享医生名片]</string>
+    <string name="zhongyaotishi">重要指示</string>
+    <string name="xuyaokaiqishexiangtouquanxian">需要开启摄像头权限！否则不能使用！</string>
+    <string name="zanshimeiyouxinxiaoxi">暂时没有新消息</string>
+    <string name="xinpengyou">新朋友</string>
+    <string name="soshujiu">SOS呼救</string>
+    <string name="haoyouxiaoxituisong">好友消息推送</string>
+    <string name="zhongyaotongzhi">重要通知</string>
+    <string name="chakanjiankangshujushenqing">查看健康数据申请</string>
+    <string name="yichangshuju">异常数据</string>
+    <string name="yishirenzhengshenhejieguo">医生认证审核结果</string>
+    <string name="yonghudingdan">用户订单</string>
+    <string name="zhixinyisheng">知心医生</string>
+    <string name="yitongyi">已同意</string>
+    <string name="yizuofei">已作废</string>
+    <string name="tongyi">同意</string>
+    <string name="yishengrenzhengshenhejieguo">医生认证审核结果</string>
+    <string name="haoyoumeiyouid">好友没有ID</string>
+    <string name="haoyoumeiyoudianhua">好友没有电话</string>
+    <string name="tongyichenggong">同意成功</string>
+    <string name="tongyishibai">同意失败!</string>
+    <string name="shenqingchengweinindehaoyou">申请成为您的好友</string>
+    <string name="yijingtongyinindechakanjiankangshujushenqing">已经同意您的查看健康数据申请</string>
+    <string name="yitongyinindehaoyouqingqiu">已同意您的好友请求</string>
+    <string name="qingqiuchakannindejiankangshuju">请求查看您的健康数据</string>
+</resources>

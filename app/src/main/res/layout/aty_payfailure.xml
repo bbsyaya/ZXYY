@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <include layout="@layout/title_layout" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@mipmap/ic_failure_close"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/secendSize"
+                android:textColor="@color/textcolor"
+                android:text="@string/zhifushibai"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline" />
+    <Button
+        android:id="@+id/btn_payagain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonHeight"
+        android:text="@string/zaicizhifu"
+        android:background="@drawable/shape_main_color"
+        android:layout_marginTop="17dp"
+        android:textSize="@dimen/secendSize"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/mainleft"
+        android:layout_marginRight="@dimen/mainright"/>
+</LinearLayout>

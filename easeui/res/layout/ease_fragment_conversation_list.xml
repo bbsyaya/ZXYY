@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyphenate="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+	<RelativeLayout
+        android:id="@+id/wuxiaoxi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/wuxiaoxi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="150dp"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zanshimeiyouxinxiaoxi"
+            android:id="@+id/textView2"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/list_itease_secondary_color"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/youxiaoxi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.hyphenate.easeui.widget.EaseTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            hyphenate:titleBarTitle="@string/session" />
+
+        <include layout="@layout/ease_search_bar" />
+
+        <FrameLayout
+            android:id="@+id/fl_error_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#cccccc" />-->
+
+        <com.hyphenate.easeui.widget.EaseConversationList
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            android:divider="#cccccc"
+            android:scrollbars="none"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            hyphenate:cvsListPrimaryTextSize="16sp" />
+
+    </LinearLayout>
+</FrameLayout>

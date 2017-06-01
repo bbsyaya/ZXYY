@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <include layout="@layout/title_layout"/>
+    <RelativeLayout
+        android:id="@+id/setting_ll_language"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/selector_viewgroup_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/duoyuyan"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/twosize"
+            android:layout_marginLeft="15dip"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简体中文"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/shallowColor"
+            android:textSize="@dimen/twosize"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/setting_img_language"/>
+        <ImageView
+            android:id="@+id/setting_img_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_wanshan_xiangyou"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginLeft="@dimen/mainleft"
+        android:layout_marginRight="@dimen/mainright"
+        android:background="@color/empty_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/setting_ll_cache"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/selector_viewgroup_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:text="@string/qingchuhuancun"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/twosize" />
+
+        <TextView
+            android:id="@+id/tv_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/setting_img_cache"
+            android:text="5M"
+            android:textColor="@color/shallowColor"
+            android:textSize="@dimen/twosize" />
+
+        <ImageView
+            android:id="@+id/setting_img_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@mipmap/ic_wanshan_xiangyou" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <include layout="@layout/title_layout"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_version_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homeTitle"
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tv_versionname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本:android 1.01"
+        android:textColor="@color/textcolor"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_checkversion"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_viewgroup_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jianchaxinbanben"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/textcolor"
+            android:layout_marginLeft="15dip"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/setting_img_health"
+            android:layout_width="@dimen/jiantou_right"
+            android:layout_height="@dimen/jiantou_right"
+            android:background="@drawable/jiantou_xiangyou"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"/>
+
+    </RelativeLayout>
+</LinearLayout>

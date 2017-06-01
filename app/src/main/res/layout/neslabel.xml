@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/viewline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/nes_et_sousuo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/btn_white_shape"
+            android:hint="搜索联系人" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/viewline">
+
+        <TextView
+            android:id="@+id/tv_nes_quanbu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:text="    全部联系人 0"
+            android:textSize="@dimen/threesize" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:id="@+id/label_friends_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff">
+
+                    <ListView
+                        android:id="@+id/news_lianxiren"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"></ListView>
+
+                    <com.zhixinyisheng.user.base.SideBar
+                        android:id="@+id/friend_sider"
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:background="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/friend_tv"
+                        android:layout_width="@dimen/x40"
+                        android:layout_height="@dimen/x40"
+                        android:layout_gravity="center"
+                        android:background="#59b9b9"
+                        android:gravity="center"
+                        android:textSize="@dimen/x15"
+                        android:visibility="invisible" />
+
+
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/viewline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.0">
+
+
+                    <Button
+                        android:id="@+id/img_nes_queding"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_health_ok" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_nes_queding"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="确定"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/twosize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.0">
+
+                    <CheckBox
+                        android:id="@+id/img_nes_quanxuan"
+                        style="@style/QuanxuanCheckboxTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_nes_quanxuan"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="全选"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/twosize" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

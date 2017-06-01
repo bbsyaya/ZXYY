@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc">
+    <include layout="@layout/title_layout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+            <ImageView
+                android:id="@+id/iv_doctor_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_default_pic"
+                android:layout_margin="@dimen/mainleft"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/psitem_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张明芳 大夫"
+                    android:textColor="@color/deepColor"
+                    android:textSize="@dimen/secendSize" />
+
+                <TextView
+                    android:id="@+id/psitem_iv_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="高级医师"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/threesize" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/psitem_tv_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="石家庄肾病医院"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/threesize" />
+
+                <TextView
+                    android:id="@+id/psitem_tv_section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:text="肾内科是多少度空间是可敬的是看得见"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/threesize" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shanchangjibing"
+                    android:textColor="@color/shallowColor"
+                    android:textSize="@dimen/threesize" />
+
+                <TextView
+                    android:id="@+id/psitem_tv_disease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text=" 肾病、肝病、心脏病、外科"
+                    android:textColor="@color/shallowColor"
+                    android:textSize="@dimen/threesize" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/viewline" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_charge_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/forthSize"
+                    android:textColor="@color/textcolor"
+                    android:text="500人已购买"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/secendSize"
+            android:text="请选择服务类型"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/mainleft"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_day"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_viewgroup_bg">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewline" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_perday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maincolor"
+                android:textSize="@dimen/threesize"
+                android:text="1元"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/threesize"
+                android:text="@string/tian"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_day"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/field_margin_right"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_week"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_viewgroup_bg">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_marginRight="@dimen/mainright"
+            android:background="@color/viewline" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_perweek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maincolor"
+                android:textSize="@dimen/threesize"
+                android:text="7元"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/threesize"
+                android:text="@string/zhou"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_week"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/field_margin_right"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_month"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_viewgroup_bg">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_marginRight="@dimen/mainright"
+            android:background="@color/viewline" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_permonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maincolor"
+                android:textSize="@dimen/threesize"
+                android:text="30元"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/threesize"
+                android:text="@string/yue"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_month"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/field_margin_right"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_year"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_viewgroup_bg">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_marginRight="@dimen/mainright"
+            android:background="@color/viewline" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_peryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maincolor"
+                android:textSize="@dimen/threesize"
+                android:text="100元"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/threesize"
+                android:text="@string/nian"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_year"
+            style="@style/SouSuoCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/field_margin_right"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewline" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/viewline" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/secendSize"
+            android:textColor="@color/textcolor"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:text="@string/goumaishuliang"/>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="28dp"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_white_shape"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/iv_reduce"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@mipmap/gmfw_btn_reduce_dis"/>
+            <TextView
+                android:id="@+id/tv_purchase_num"
+                android:layout_width="34dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:textSize="@dimen/secendSize"
+                android:textColor="@color/textcolor"
+                android:text="1"/>
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@mipmap/gmfw_btn_agg_def"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonHeight"
+            android:text="@string/goumai"
+            android:background="@drawable/shape_main_color"
+            android:textSize="@dimen/twosize"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_marginRight="@dimen/mainright"/>
+    </RelativeLayout>
+</LinearLayout>

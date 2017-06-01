@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@mipmap/ic_newlogo"
+        android:layout_above="@+id/rl_denglu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp" />
+    <RelativeLayout
+        android:id="@+id/rl_denglu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <include
+            layout="@layout/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="318dp"
+        android:layout_height="50dp"
+        android:text="@string/Login"
+        android:textSize="@dimen/font_button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_gray_color"
+        android:id="@+id/btn_commit"
+        android:layout_below="@+id/rl_denglu"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:id="@+id/shu"
+        android:layout_width="2dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:background="#eaeaea" />
+
+    <TextView
+        android:id="@+id/btn_forgetpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/shu"
+        android:layout_toRightOf="@+id/shu"
+        android:text="@string/ForgetPassword"
+        android:textSize="@dimen/twosize" />
+
+    <TextView
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_toLeftOf="@+id/shu"
+        android:gravity="center"
+        android:text="@string/Register"
+        android:textSize="@dimen/twosize" />
+</RelativeLayout>

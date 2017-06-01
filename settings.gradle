@@ -1,0 +1,1 @@
+include ':app', ':andframe', ':easeui', ':galleryfinal', ':flycodialog_lib', ':magicindicator'

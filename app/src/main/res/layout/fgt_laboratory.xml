@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_lab_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homebgc"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/homebgc">
+
+            <ImageView
+                android:id="@+id/iv_shouxie"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/mainright"
+                android:background="@drawable/shouxie" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/hyd_img" />
+
+        <Button
+            android:id="@+id/btn_laboratory_send"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginRight="68dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_laboratory_shape"
+            android:text="@string/paizhaoshangchuanhuayandan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/caozuobuzhou"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/secendsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dp"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_marginTop="5dp"
+            android:text="@string/paizhaohuoshangchuanhuayandantupian"
+            android:textColor="@color/shallowColor"
+            android:textSize="@dimen/twosize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dp"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_marginTop="5dp"
+            android:text="@string/huayandangexiangxinxiqingxikejian"
+            android:textColor="@color/shallowColor"
+            android:textSize="@dimen/twosize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dp"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_marginTop="5dp"
+            android:text="@string/genjuyaoqiujiequ"
+            android:textColor="@color/shallowColor"
+            android:textSize="@dimen/twosize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dp"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_marginTop="5dp"
+            android:text="@string/shaozuodengdaixitongzhineng"
+            android:textColor="@color/shallowColor"
+            android:textSize="@dimen/twosize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_lab_have"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homebgc"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/homebgc">
+
+            <ImageView
+                android:id="@+id/iv_lab_rili"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/iv_lab_camera"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rili" />
+
+
+            <ImageView
+                android:id="@+id/iv_lab_camera"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignTop="@+id/iv_lab_shouxie"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/iv_lab_shouxie"
+                android:layout_toStartOf="@+id/iv_lab_shouxie"
+                android:background="@drawable/qiehuan_shezhen" />
+
+            <ImageView
+                android:id="@+id/iv_lab_shouxie"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/mainright"
+                android:background="@drawable/shouxie" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/empty_bg" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_lab_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</FrameLayout>

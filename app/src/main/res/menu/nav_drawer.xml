@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_my_profile"
+            android:icon="@mipmap/ic_left_grzl"
+            android:title="@string/gerenziliao"/>
+        <item
+            android:id="@+id/nav_menu_data"
+            android:icon="@mipmap/ic_left_jksj"
+            android:title="@string/left_myHealthyData" />
+
+        <item
+            android:id="@+id/nav_menu_homepage"
+            android:icon="@mipmap/ic_left_yszy"
+            android:title="@string/left_myHomePage" />
+        <item
+            android:id="@+id/nav_menu_remind"
+            android:icon="@mipmap/ic_left_yytx"
+            android:title="@string/yongyaotixing" />
+        <item
+            android:id="@+id/nav_menu_certification"
+            android:icon="@mipmap/ic_left_rzys"
+            android:title="@string/left_doctorCertification" />
+
+        <item
+            android:id="@+id/nav_menu_doctor_service"
+            android:icon="@mipmap/ic_left_ysfw"
+            android:title="@string/yishengfuwu" />
+
+
+        <item
+            android:id="@+id/nav_menu_setting"
+            android:icon="@mipmap/ic_left_sz"
+            android:title="@string/left_settings" />
+
+    </group>
+</menu>

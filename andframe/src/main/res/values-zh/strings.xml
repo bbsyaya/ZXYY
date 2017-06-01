@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="banbenhao">\n版本号:</string>
+    <string name="confirm">确定</string>
+    <string name="Cancel">取消</string>
+    <string name="notice">提示</string>
+    <string name="wait">请稍等...</string>
+    <string name="gengxintishi">更新提示</string>
+    <string name="houtaixiazaizhong">在后台下载中，请稍候...</string>
+    <string name="zhengzaixiazai">正在下载...</string>
+    <string name="xiazaiwancheng">下载完成</string>
+    <string name="wenjianxiazaiwanbi">文件已下载完毕</string>
+    <string name="xiazaishibai">下载失败</string>
+    <string name="kaishixiazai">开始下载</string>
+    <string name="qingjianchawangluolianjie">请检查网络连接</string>
+    <string name="banbentaidi">版本太低，请卸载后重新下载！</string>
+    <string name="fuwuqiyichang">服务器异常</string>
+</resources>

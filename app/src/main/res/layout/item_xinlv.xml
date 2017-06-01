@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/homebgc"
+    android:orientation="horizontal"
+    android:padding="@dimen/x8">
+
+
+    <TextView
+        android:id="@+id/item_tvt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="2015-5-25"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/font_normal" />
+
+    <RelativeLayout
+        android:id="@+id/item_lld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/item_tvsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="120"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/item_tvd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=" mmHg"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/font_normal"
+            android:layout_toRightOf="@+id/item_tvsj"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/item_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_btn_warn_n"
+        android:visibility="gone" />
+
+</RelativeLayout>

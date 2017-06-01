@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_pulmonary"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/homebgc">
+        <TextView
+            android:id="@+id/tv_pulmonary_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/shallowColor"
+            android:textSize="@dimen/twosize"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:text="2017-01-14 15:25:30"/>
+        <TextView
+            android:id="@+id/tv_pulmonary_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/secendSize"
+            android:text="3200"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

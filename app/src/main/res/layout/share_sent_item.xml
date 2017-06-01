@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/homebgc"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/iv_userhead"
+        android:layout_width="@dimen/size_avatar"
+        android:layout_height="@dimen/size_avatar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/timestamp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ease_default_avatar"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/bubble"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_userhead"
+        android:layout_toLeftOf="@+id/iv_userhead"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv3"
+            android:text="推荐：张伟明"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_toLeftOf="@+id/iv_to_user_id"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv3"
+            android:layout_below="@+id/tv1"
+            android:text="皮肤科 主治医师主治医师"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/iv_to_user_id"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="擅长：肾病,肝功能肝功能肝功能肝功能"
+            android:textSize="14sp"
+            android:layout_toLeftOf="@+id/iv_to_user_id"
+            android:paddingRight="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_to_user_id"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_alignBottom="@+id/tv3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:background="@drawable/ease_default_avatar"
+            android:scaleType="fitXY"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv3"
+            android:layout_marginTop="5dp"
+            android:background="#eaeaea" />
+
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/tv3"
+            android:layout_below="@+id/tv3"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_newlogo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv3"
+            android:layout_below="@+id/tv3"
+            android:layout_marginLeft="25dp"
+            android:text="知心医生"
+            android:layout_alignBaseline="@+id/iv_flag"
+            android:layout_marginTop="11dp"
+            android:textSize="@dimen/font_samll_more"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

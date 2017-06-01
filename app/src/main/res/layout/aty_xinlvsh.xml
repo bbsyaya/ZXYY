@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_xinlvshoudong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homebgc"
+    >
+    <include
+        layout="@layout/title_layout" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/homebgc"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/threesize"
+            android:text="2015-07-08 15:01更新" />
+
+        <ImageView
+            android:id="@+id/iv_tongbu"
+            android:layout_width="@dimen/rili"
+            android:layout_height="@dimen/rili"
+            android:background="@drawable/tongbu"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homebgc">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/homebgc"
+            android:id="@+id/relativeLayout2">
+            <RelativeLayout
+                android:id="@+id/Lv"
+                android:layout_width="179dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/homebgc">
+
+                <com.zhixinyisheng.user.view.BatteryView2
+                    android:id="@+id/mybatteryview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <ImageView
+                    android:id="@+id/xinlv_xin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/sy_img_xl__02"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_xinlvshoudongshuru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="#28ced5"
+                android:textSize="24sp"
+                android:layout_below="@+id/Lv"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/xinlv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/home_heartRate"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_xinlvshoudongshuru"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/cifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xinlv3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="@string/heartUnit"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heartMessage"
+            android:id="@+id/textView6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/btn_xinlvshuru"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_button"
+            android:background="@drawable/shape_main_color"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:layout_marginRight="@dimen/mainright"
+            android:layout_marginBottom="@dimen/buttonBottom"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>

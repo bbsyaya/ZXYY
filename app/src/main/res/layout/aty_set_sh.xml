@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fble_iv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x200"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shouhuan" />
+
+                <TextView
+                    android:id="@+id/sble_tv_shn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/shouhuanmingzi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twosize" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/yilianjieshouhuan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twosize" />
+
+                <TextView
+                    android:id="@+id/sble_tvblen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="130dp"
+                    android:text="100"
+                    android:textColor="@color/white"
+                    android:textSize="51sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sble_rljc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x25"
+                android:layout_below="@+id/sble_rl_tp"
+                android:background="#dddddd">
+
+                <TextView
+                    android:id="@+id/sble_tvybd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/yibangding"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/twosize" />
+
+                <TextView
+                    android:id="@+id/sble_tvjcbd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:text="@string/jiechubangding"
+                    android:textColor="@color/maincolor"
+                    android:textSize="@dimen/twosize" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/sble_rll_tx"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tv_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:src="@drawable/ct_icon_szsh_txsz_android" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/shezhitixing"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/twosize" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:layout_marginRight="@dimen/mainright"
+                android:background="@color/empty_bg" />
+            <LinearLayout
+                android:id="@+id/sble_rltt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tv_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:src="@drawable/blecheck_icon_bluetooth_tbsj" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/tongbushijian"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/twosize" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:layout_marginRight="@dimen/mainright"
+                android:background="@color/empty_bg" />
+            <LinearLayout
+                android:id="@+id/sble_rlsy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tv_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:src="@drawable/blecheck_icon_bluetooth_sydl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/shengyudianliang"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/twosize" />
+                <TextView
+                    android:id="@+id/sble_tvdl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="0%"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:textSize="@dimen/twosize"  />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:layout_marginRight="@dimen/mainright"
+                android:background="@color/empty_bg" />
+            <LinearLayout
+                android:id="@+id/sble_rlsn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tv_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:src="@drawable/blecheck_icon_bluetooth_sznz" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/shezhinaozhong"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/twosize" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:layout_marginRight="@dimen/mainright"
+                android:background="@color/empty_bg" />
+            <LinearLayout
+                android:id="@+id/sble_rlqk"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tv_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:src="@drawable/blecheck_icon_bluetooth_qksj" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/qingkongshuju"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/twosize" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:layout_marginRight="@dimen/mainright"
+                android:background="@color/empty_bg" />
+            <LinearLayout
+                android:id="@+id/sble_rlcq"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tv_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:src="@drawable/blecheck_icon_bluetooth_cq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/chongxinqidongzhinengshebei"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/twosize" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:layout_marginRight="@dimen/mainright"
+                android:background="@color/empty_bg" />
+            <LinearLayout
+                android:id="@+id/sble_rltap"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tv_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:src="@drawable/check_icon_bluetooth_tap" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:text="@string/hujiaochangyongyu"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/twosize" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

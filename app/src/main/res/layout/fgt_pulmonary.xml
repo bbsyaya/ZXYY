@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fhl_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape_pulmonary_gradient" />
+
+        <LinearLayout
+            android:id="@+id/fhl_ll_cq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fhl_ll_yc"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xiangxiamiandemaikefengchuiqiba"
+                android:textSize="@dimen/firstsize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ct_bg_c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fhl_ll_yc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_fhl_cloud"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/iv_rili"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:background="@drawable/rili" />
+
+            <ImageView
+                android:id="@+id/iv_zhexiantu"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/mainright"
+                android:background="@drawable/iv_zhexiantu" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fhl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="115dp"
+            android:text="0000"
+            android:textColor="@color/maincolor"
+            android:textSize="80dp" />
+
+
+        <TextView
+            android:id="@+id/zhi"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:text=""
+            android:textColor="@color/textcolor"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/fhl_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/btn_pulmonary_shape"
+            android:gravity="center"
+            android:text="@string/startMeasuring"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/font_button" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_rili"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#00ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/homebgc">
+
+            <ImageView
+                android:id="@+id/iv_rili2"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:background="@drawable/rili" />
+
+            <ImageView
+                android:id="@+id/iv_zhexiantu2"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/mainright"
+                android:background="@drawable/iv_zhexiantu" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_pulmonary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/hintcolor"
+            android:dividerHeight="1.0px"></ListView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_zhexiantu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homebgc"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_zhexiantu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/homebgc"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_rili3"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainleft"
+                    android:background="@drawable/rili" />
+
+                <ImageView
+                    android:id="@+id/iv_zhexiantu_close"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/mainright"
+                    android:background="@drawable/sz_btn_ch" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lungCapacityValue"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/x12" />
+
+            </RelativeLayout>
+
+            <com.zhixinyisheng.user.view.MyViewBD
+                android:id="@+id/pulmonary_mv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/zxt_top" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x38"
+                android:layout_marginTop="@dimen/x5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x3"
+                    android:layout_gravity="center_vertical"
+                    android:background="#00a1f9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="@string/lungCapacityCurve"
+                    android:textColor="@color/textcolor" />
+            </LinearLayout>
+
+            <com.and.yzy.frame.view.listview.ListViewForScrollView
+                android:id="@+id/lv_pulmonary_trend"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/xl_ll1"
+                android:layout_marginLeft="@dimen/mainleft"
+                android:layout_marginRight="@dimen/mainright"
+                android:cacheColorHint="#ffff0000"
+                android:divider="#cccccc"
+                android:dividerHeight="1.0px"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="#ffffff"
+                android:scrollbars="none"
+                android:smoothScrollbar="false">
+
+            </com.and.yzy.frame.view.listview.ListViewForScrollView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

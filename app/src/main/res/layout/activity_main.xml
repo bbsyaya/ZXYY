@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homebgc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <include layout="@layout/title_layout" />
+            <!--<include layout="@layout/home" />-->
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/content_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="-15dp"
+                    android:background="#00000000">
+                    <!--TODO 2016年11月04日15:54:10-->
+                    <ImageView
+                        android:id="@+id/btn_main_up"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/x10"
+                        android:background="@drawable/up_pressed"
+                        android:visibility="gone"/>
+                    <GridView
+                        android:id="@+id/gridView_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_below="@+id/btn_main_up"
+                        android:background="@drawable/btn_white_shape4"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:scrollbars="none"
+                        android:numColumns="6"
+                        android:stretchMode="columnWidth"
+                        android:text="关注的好友列表"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        -
+
+        <RelativeLayout
+            android:id="@+id/rl_touming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/xinshouzhiyin1"
+            android:visibility="gone">
+            <!--<Button-->
+
+            <!--android:id="@+id/btn_kscs"-->
+
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_alignParentBottom="true"-->
+
+            <!--android:layout_centerHorizontal="true"-->
+
+            <!--android:layout_marginBottom="36dp"-->
+
+            <!--android:text="快速测试"/>-->
+        </RelativeLayout>-
+
+        <RelativeLayout
+            android:id="@+id/rl_touming_kscl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/xinshouzhiyin2"
+            android:visibility="gone">
+            <!--<Button-->
+
+            <!--android:id="@+id/btn_kscl"-->
+
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_alignParentBottom="true"-->
+
+            <!--android:layout_centerHorizontal="true"-->
+
+            <!--android:layout_marginBottom="36dp"-->
+
+            <!--android:text="开始测量"/>-->
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:background="#f2f2f2"
+              android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/frame_iv_error"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x200"
+        android:layout_marginTop="@dimen/y100"
+        android:src="@drawable/frame_yzypmj_error"/>
+
+
+
+    <Button
+        android:id="@+id/btn_resh"
+        android:layout_width="@dimen/x220"
+        android:layout_height="@dimen/y60"
+        android:layout_marginTop="@dimen/y20"
+        android:gravity="center"
+        android:text="刷新"
+        android:visibility="gone"
+        android:textColor="#000000"/>
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebgc"
+    tools:context="com.zhixinyisheng.user.ui.mydoctor.fragment.DoctorServiceFragment">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ea" />
+    <ListView
+        android:id="@+id/lv_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/gray_ea"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="5dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_def_bg"
+            android:text="主人！没有结果"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/font_normal"
+            android:drawablePadding="10dp"
+            />
+    </RelativeLayout>
+</FrameLayout>

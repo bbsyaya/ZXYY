@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/homebgc"
+              >
+
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="#98FC95"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="#98FC95"
+        app:qrcv_scanLineSize="1dp"
+        app:qrcv_topOffset="160dp"/>
+    <RelativeLayout
+        android:id="@+id/title_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#AF000000">
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mainleft"
+            android:background="@drawable/btn_title_back"
+            android:alpha="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saoyisao"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/firstsize"
+            android:layout_alignBottom="@+id/iv_finish"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <!--<ImageView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:id="@+id/iv_finish"-->
+        <!--android:src="@mipmap/fanhuijiantou"-->
+        <!--/>-->
+</RelativeLayout>
